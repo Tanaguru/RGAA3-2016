@@ -67,9 +67,13 @@ For each element of **Set2**, raise a MessageA
 
 #### Not Applicable
 
-The page has no `<img>` tag with an `"alt"` attribute identified as a captcha (**Set2** is empty)
+The page has no `<img>` tag (**Set1** is empty)
 
 #### Pre-qualified
+
+The page has `<img>` tag with an `"alt"` attribute identified as a captcha (**Set2** is not empty)
+
+#### No Tested
 
 In all other cases
 
