@@ -52,13 +52,26 @@ All the elements of **Set1** identified as a CAPTCHA (see Notes for details abou
 
 ### Process
 
-#### Test1
+#### Test
+
+##### Test1
 
 For each element of **Set2**, raise a MessageA
+
+If **Set2** is empty and **Set1** is not empty, raise a MessageB
+
+#### Message
 
 ##### MessageA : Check captcha alternative
 
 -    code : **CheckCaptchaAlternative** 
+-    status: Pre-Qualified
+-    parameter : `"alt"` attribute, `"src"` attribute, tag name, snippet
+-    present in source : yes
+
+##### MessageB : Check presence captcha in page
+
+-    code : **CheckPresenceCaptchaInPage** 
 -    status: Pre-Qualified
 -    parameter : `"alt"` attribute, `"src"` attribute, tag name, snippet
 -    present in source : yes
@@ -70,10 +83,6 @@ For each element of **Set2**, raise a MessageA
 The page has no `<img>` tag (**Set1** is empty)
 
 #### Pre-qualified
-
-The page has `<img>` tag with an `"alt"` attribute identified as a captcha (**Set2** is not empty)
-
-#### No Tested
 
 In all other cases
 
