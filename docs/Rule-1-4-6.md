@@ -56,6 +56,8 @@ All the elements of **Set1** identified as a CAPTCHA (see Notes for details abou
 
 For each element of **Set2**, raise a MessageA
 
+If **Set2** is empty and **Set1** is not empty, raise a MessageB
+
 ##### MessageA : Check captcha alternative
 
 -    code : **CheckCaptchaAlternative** 
@@ -63,11 +65,18 @@ For each element of **Set2**, raise a MessageA
 -    parameter : `"title"` attribute, `"aria-label"` attribute, tag name, snippet
 -    present in source : yes
 
+##### MessageB : Check presence captcha in page
+
+-    code : **CheckPresenceCaptchaInPage** 
+-    status: Pre-Qualified
+-    parameter : `"alt"` attribute, `"src"` attribute, tag name, snippet
+-    present in source : yes
+
 ### Analysis
 
 #### Not Applicable
 
-The page has no `<svg>` tag with an `"aria-label"` attribute or a `<desc>` child tag identified as a captcha (**Set2** is empty)
+The page has no `<svg>` tag (**Set1** is empty)
 
 #### Pre-qualified
 
