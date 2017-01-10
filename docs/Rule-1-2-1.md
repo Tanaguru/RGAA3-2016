@@ -77,10 +77,23 @@ For each element returning true in **Test3**, raise a MessageD.
 
 ##### Test4 
 
-For each element of **Set3** (decorative `<img>` identified by a html marker), check that the `"title"` attribute is missing. 
+For each element of **Set3** (decorative `<img>` identified by a html marker), check that `"title"` attributes is missing. 
 
 For each element returning false in **Test4**, raise a MessageC.
 For each element returning true in **Test4**, raise a MessageD.
+
+##### Test5 
+
+For each element of **Set2** (decorative `<img>` identified by a html marker), check that `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes is missing. 
+
+For each element returning false in **Test5**, raise a MessageE. 
+
+##### Test6 
+
+For each element of **Set3** (decorative `<img>` identified by a html marker), check that `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes is missing. 
+
+For each element returning false in **Test6**, raise a MessageC.
+For each element returning true in **Test6**, raise a MessageD.
 
 #### Messages
 
@@ -112,6 +125,13 @@ For each element returning true in **Test4**, raise a MessageD.
 -    parameter : Snippet
 -    present in source : yes
 
+##### MessageE : Decorative image with an Aria attribute
+
+-    code : DecorativeElementWithAriaAttribute
+-    status: Failed
+-    parameter : `"alt"` attribute, `"aria-label"` attribute, `"aria-describedby"` attribute, `"aria-labelledby"` attribute, `"src"` attribute, Snippet
+-    present in source : yes
+
 ### Analysis
 
 #### Not Applicable
@@ -120,11 +140,11 @@ The page has no `<img>` tag with an `"alt"` attribute (**Set1** is empty)
 
 #### Failed
 
-At least one `<img>` identified as decorative has a not empty alternative (**Test1** OR **Test2** returns false for at least one element)
+At least one `<img>` identified as decorative has a not empty alternative (**Test1**, **Test2** OR **Test5** returns false for at least one element)
 
 #### Passed
 
-All the `<img>` of the page are identified as decorative and have an empty alternative (**Set3** is empty and **Test1** AND **Test2** returns true for all element)
+All the `<img>` of the page are identified as decorative and have an empty alternative (**Set3** is empty and **Test1**, **Test2** AND **Test5** returns true for all element)
 
 #### Pre-qualified
 
