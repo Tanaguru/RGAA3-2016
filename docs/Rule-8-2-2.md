@@ -40,6 +40,10 @@ Pour chaque d&eacute;claration de <a href="http://references.modernisation.gouv.
 
 All error raised by the W3C validator.
 
+#### Set2
+
+All warning raised by the W3C validator.
+
 ### Process
 
 #### Tests
@@ -49,6 +53,24 @@ All error raised by the W3C validator.
 For each element in **Set1**, check if the error message contain the mention "element is obsolete".
 
 For each element returning true in **Test1**, raise a MessageA.
+
+##### Test2 
+
+For each element in **Set1**, check if the error message contain mentions "isindex" and "seen".
+
+For each element returning true in **Test2**, raise a MessageA.
+
+##### Test3 
+
+For each element in **Set2**, check if the warning message contain the mention "element is obsolete".
+
+For each element returning true in **Test3**, raise a MessageA.
+
+##### Test4 
+
+For each element in **Set2**, check if the warning message contain the mention "attribute is obsolete".
+
+For each element returning true in **Test4**, raise a MessageA.
 
 #### Messages
 
@@ -63,8 +85,8 @@ For each element returning true in **Test1**, raise a MessageA.
 
 #### Failed
 
-At least one obsolete error is raised (**Test1** return true for at least one element).
+At least one obsolete error is raised (**Test1**, **Test2**, **Test3** or **Test4** return true for at least one element).
 
 #### Passed
 
-The page has no W3C obsolete error (**Test1** return false for all element).
+The page has no W3C obsolete error (**Test1**, **Test2**, **Test3** and **Test4** return false for all element).
