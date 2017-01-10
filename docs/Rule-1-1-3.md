@@ -8,11 +8,11 @@ This test consists in checking whether each form button is defined with an `"alt
 
 ### Criterion
 
-[1.1](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-1-1)
+[1.1](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-1-1)
 
 ### Test
 
-[1.1.3](http://references.modernisation.gouv.fr/referentiel-technique-0#test-1-1-3)
+[1.1.3](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-1-1-3)
 
 ### Description
 

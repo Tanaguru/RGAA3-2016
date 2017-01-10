@@ -8,18 +8,19 @@ This test consists in checking whether the `alt` attribute of each decorative im
 
 ### Criterion
 
-[1.2](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-1-2)
+[1.2](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-1-2)
 
 ### Test
 
-[1.2.1](http://references.modernisation.gouv.fr/referentiel-technique-0#test-1-2-1)
+[1.2.1](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-1-2-1)
 
 ### Description
 
-Chaque <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mimgDeco">image de d&eacute;coration</a> sans <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mLegendeImage">l&eacute;gende</a> (balise `img`) et ayant un attribut `alt` v&eacute;rifie-t-elle ces conditions : 
+Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#image-de-dcoration">image de d&eacute;coration</a> (balise `img`) sans <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#lgende-dimage">l&eacute;gende</a> et ayant un attribut `alt` v&eacute;rifie-t-elle ces conditions : 
  
- * le contenu de l'attribut alt est vide (`alt=""`) 
- * l'image de d&eacute;coration ne poss&egrave;de pas d'attribut `title` 
+ * le contenu de l'attribut alt est vide (`alt=""`) ;
+ * l'image de d&eacute;coration ne poss&egrave;de pas d'attribut `title` ;
+ * la balise img est dépourvue de role, propriété ou état ARIA visant à labelliser l'image (aria-label, aria-describedby, aria-labelledby par exemple).
 
 ### Level
 

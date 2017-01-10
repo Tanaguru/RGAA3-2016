@@ -8,15 +8,15 @@ This test consists in checking whether each `<area>` of an image map is defined 
 
 ### Criterion
 
-[1.1](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-1-1)
+[1.1](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-1-1)
 
 ### Test
 
-[1.1.2](http://references.modernisation.gouv.fr/referentiel-technique-0#test-1-1-2)
+[1.1.2](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-1-1-2)
 
 ### Description
 
-Chaque <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mZone">zone</a> (balise `area`) d'une <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mImgReactive">image r&eacute;active</a> a-t-elle un attribut `alt` ?
+Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#zone-dune-image-ractive">zone</a> (balise `area`) d'une <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#image-ractive">image r&eacute;active</a> a-t-elle un attribut `alt` ?
 
 ### Level
 
