@@ -20,7 +20,7 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#imag
  
  * le contenu de l'attribut alt est vide (`alt=""`) ;
  * l'image de d&eacute;coration ne poss&egrave;de pas d'attribut `title` ;
- * la balise img est dépourvue de role, propriété ou état ARIA visant à labelliser l'image (aria-label, aria-describedby, aria-labelledby par exemple).
+ * la balise img est dépourvue de role, propriété ou état ARIA visant à labelliser l'image (`aria-label`, `aria-describedby`, `aria-labelledby` par exemple).
 
 ### Level
 
