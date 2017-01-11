@@ -33,7 +33,7 @@ Dans chaque page Web, chaque texte &eacute;crit dans une langue diff&eacute;rent
 
 ### Decision level
 
-**semidecidable**
+**decidable**
 
 ## Algorithm
 
