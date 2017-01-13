@@ -77,20 +77,20 @@ For each element returning true in **Test3**, raise a MessageD.
 
 ##### Test4 
 
-For each element of **Set3** (decorative `<img>` identified by a html marker), check that `"title"` attributes is missing. 
+For each element of **Set3** (decorative `<img>` identified by a html marker), check that the `"title"` attribute is missing. 
 
 For each element returning false in **Test4**, raise a MessageC.
 For each element returning true in **Test4**, raise a MessageD.
 
 ##### Test5 
 
-For each element of **Set2** (decorative `<img>` identified by a html marker), check that `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes is missing. 
+For each element of **Set2** (decorative `<img>` identified by a html marker), check that the `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes are missing. 
 
 For each element returning false in **Test5**, raise a MessageE. 
 
 ##### Test6 
 
-For each element of **Set3** (decorative `<img>` identified by a html marker), check that `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes is missing. 
+For each element of **Set3** (decorative `<img>` identified by a html marker), check that the `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes are missing. 
 
 For each element returning false in **Test6**, raise a MessageC.
 For each element returning true in **Test6**, raise a MessageD.
