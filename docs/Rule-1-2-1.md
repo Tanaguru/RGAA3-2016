@@ -114,14 +114,14 @@ For each element returning true in **Test6**, raise a MessageD.
 ##### MessageC : Check the nature of the image with a not empty alternative
 
 -    code : CheckNatureOfElementWithNotEmptyAltAttribute
--    status: Pre-qualified
+-    status: Pre-qualified (NMI-Failed)
 -    parameter : Snippet
 -    present in source : yes
 
 ##### MessageD : Check the nature of the image with a empty alternative
 
 -    code : CheckNatureOfElementWithEmptyAltAttribute
--    status: Pre-qualified
+-    status: Pre-qualified (NMI-Passed)
 -    parameter : Snippet
 -    present in source : yes
 
