@@ -8,18 +8,19 @@ This test consists in checking whether the `alt` attribute of non clickable area
 
 ### Criterion
 
-[1.2](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-1-2)
+[1.2](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-1-2)
 
 ###Test
 
-[1.2.2](http://references.modernisation.gouv.fr/referentiel-technique-0#test-1-2-2)
+[1.2.2](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-1-2-2)
 
 ### Description
 
-Chaque <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mZoneNonCliquable">zone non cliquable</a> (balise `area` sans attribut `href`), non porteuse d'information et ayant un attribut `alt` v&eacute;rifie-t-elle ces conditions ? 
+Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#zone-non-cliquable">zone non cliquable</a> (balise `area` sans attribut `href`) <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#image-de-dcoration">de d&eacute;coration</a>, et ayant un attribut alt, v&eacute;rifie-t-elle ces conditions ? 
  
- * le contenu de l'attribut `alt` est vide (`alt=""`) 
- * la zone cliquable ne poss&egrave;de pas d'attribut `title` 
+ * le contenu de l'attribut `alt` est vide (`alt=""`) ;
+ * la zone cliquable ne poss&egrave;de pas d'attribut `title` ;
+ * la balise `area` est dépourvue de rôle, propriété ou état ARIA visant à labelliser l’image (`aria-label`, `aria-describedby`, `aria-labelledby` par exemple).
 
 ### Level
 
