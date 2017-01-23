@@ -82,6 +82,19 @@ For each element of **Set3** (decorative `<area>` identified by a html marker), 
 For each element returning false in **Test4**, raise a MessageC.
 For each element returning true in **Test4**, raise a MessageD.
 
+##### Test5 
+
+For each element of **Set2** (decorative `<area>` identified by a html marker), check that the `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes are missing. 
+
+For each element returning false in **Test5**, raise a MessageE. 
+
+##### Test6 
+
+For each element of **Set3** (decorative `<area>` identified by a html marker), check that the `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes are missing. 
+
+For each element returning false in **Test6**, raise a MessageC.
+For each element returning true in **Test6**, raise a MessageD.
+
 #### Messages
 
 ##### MessageA : Decorative image with not empty alternative
@@ -112,6 +125,13 @@ For each element returning true in **Test4**, raise a MessageD.
 -    parameter : Snippet
 -    present in source : yes
 
+##### MessageE : Decorative image with an Aria attribute
+
+-    code : DecorativeElementWithAriaAttribute
+-    status: Failed
+-    parameter : `"alt"` attribute, `"aria-label"` attribute, `"aria-describedby"` attribute, `"aria-labelledby"` attribute, `"src"` attribute, Snippet
+-    present in source : yes
+
 ### Analysis
 
 #### Not Applicable
@@ -120,11 +140,11 @@ The page has no `<area>` tag with an `"alt"` attribute (**Set1** is empty)
 
 #### Failed
 
-At least one `<area>` identified as decorative has a not empty alternative (**Test1** OR **Test2** returns false for at least one element)
+At least one `<area>` identified as decorative has a not empty alternative (**Test1**, **Test2** OR **Test5** returns false for at least one element)
 
 #### Passed
 
-All the `<area>` of the page are identified as decorative and have an empty alternative (**Set3** is empty and **Test1** AND **Test2** returns true for all element)
+All the `<area>` of the page are identified as decorative and have an empty alternative (**Set3** is empty and **Test1**, **Test2** AND **Test5** returns true for all element)
 
 #### Pre-qualified
 
