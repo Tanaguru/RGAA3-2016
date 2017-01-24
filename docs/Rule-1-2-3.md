@@ -8,15 +8,19 @@ This test consists in checking whether the textual alternative of each decorativ
 
 ### Criterion
 
-[1.2](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-1-2)
+[1.2](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-1-2)
 
 ### Test
 
-[1.2.3](http://references.modernisation.gouv.fr/referentiel-technique-0#test-1-2-3)
+[1.2.3](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-1-2-3)
 
 ### Description
 
-Pour chaque image objet sans <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mLegendeImage">l&eacute;gende</a> (balise `object` avec l'attribut `type="image/..."`) non porteuse d'information, l'alternative textuelle entre `<object>` et `</object>` est-elle vide ?
+Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#image-objet">image objet</a> (balise `object` avec l'attribut `type="image/..."`) <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#image-de-dcoration">de décoration</a>, sans <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#lgende-dimage">l&eacute;gende</a>, vérifie-t-elle ces conditions ? 
+
+*  La balise `object` possède un attribut `aria-hidden="true"` ;
+*  L’alternative textuelle entre `<object>` et `</object>` est vide ;
+*  La balise `object` ou l’un de ses enfants est dépourvue de rôle, propriété ou état ARIA visant à labelliser l’image (`aria-label`, `aria-describedby`, `aria-labelledby` par exemple).
 
 ### Level
 
@@ -54,17 +58,45 @@ All the elements of **Set1** identified neither as informative image, nor as dec
 
 ##### Test1
 
-For each element of **Set1**, Check the presence of text between `<object>` tags.
+For each element of **Set2**, Check the presence of text between `<object>` tags.
 
 For each occurrence of true-result of **Test1**, raise a MessageA
 
 ##### Test2
 
-For each element of **Set2**, Check the presence of text between `<object>` tags.
+For each element of **Set3**, Check the presence of text between `<object>` tags.
 
 For each occurrence of true-result of **Test2**, raise a MessageB
 
 For each occurrence of false-result of **Test2**, raise a MessageC
+
+##### Test3
+
+For each element of **Set2**, Check the presence of an `aria-hidden` attribute with `true` value.
+
+For each occurrence of false-result of **Test3**, raise a MessageD
+
+##### Test4
+
+For each element of **Set3**, Check the presence of an `aria-hidden` attribute with `true` value.
+
+For each occurrence of false-result of **Test4**, raise a MessageB
+
+For each occurrence of true-result of **Test4**, raise a MessageC
+
+##### Test5 
+
+For each element of **Set2** (decorative `<object>` identified by a html marker), check that the `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes are missing on the tag or least one its children. 
+
+For each element returning false-result in **Test5**, raise a MessageE. 
+
+##### Test6 
+
+For each element of **Set3** (decorative `<object>` not identified by a html marker), check that the `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes are missing on the tag or least one its children. 
+
+For each element returning false in **Test6**, raise a MessageB.
+
+For each element returning true in **Test6**, raise a MessageC.
 
 #### Messages
 
@@ -89,15 +121,29 @@ For each occurrence of false-result of **Test2**, raise a MessageC
 -    parameter : text, Snippet
 -    present in source : yes
 
+##### MessageD : Decorative image without aria-hidden attribute
+
+-    code : DecorativeElementWithNotEmptyAltAttribute
+-    status: Failed
+-    parameter : `"data"` attribute, text, Snippet
+-    present in source : yes
+
+##### MessageE : Decorative image with an Aria attribute
+
+-    code : DecorativeElementWithAriaAttribute
+-    status: Failed
+-    parameter : `"aria-label"` attribute, `"aria-describedby"` attribute, `"aria-labelledby"` attribute, Snippet
+-    present in source : yes
+
 ### Analysis
 
 #### Passed
 
-All the `<object type="image>` tags are identified as decorative and don't have text between `<object>` tags (**Test1** returns false for all elements)
+All the `<object type="image>` tags are identified as decorative and don't have text between `<object>` tags and have aria-hidden attribute with true value and don't have other aria attribute (**Test1** returns false for all elements and **Test3** and **Test5** returns true for all elements)
 
 #### Failed
 
-At least one `<object type="image>` identified as decorative have text between `<object>` tags (**Test1** returns true at least one element)
+At least one `<object type="image>` identified as decorative have text between `<object>` tags or not have aria-hidden attribute or have an aria attribute (**Test1** returns true at least one element or **Test3** or **Test5** returns false at least one element)
 
 #### Not Applicable
 

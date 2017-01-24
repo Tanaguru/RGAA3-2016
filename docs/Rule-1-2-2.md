@@ -77,7 +77,7 @@ For each element returning true in **Test3**, raise a MessageD.
 
 ##### Test4 
 
-For each element of **Set3** (decorative `<area>` identified by a html marker), check that the `"title"` attribute is missing. 
+For each element of **Set3** (decorative `<area>` not identified by a html marker), check that the `"title"` attribute is missing. 
 
 For each element returning false in **Test4**, raise a MessageC.
 For each element returning true in **Test4**, raise a MessageD.
@@ -90,7 +90,7 @@ For each element returning false in **Test5**, raise a MessageE.
 
 ##### Test6 
 
-For each element of **Set3** (decorative `<area>` identified by a html marker), check that the `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes are missing. 
+For each element of **Set3** (decorative `<area>` not identified by a html marker), check that the `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes are missing. 
 
 For each element returning false in **Test6**, raise a MessageC.
 For each element returning true in **Test6**, raise a MessageD.
