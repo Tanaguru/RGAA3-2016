@@ -8,15 +8,19 @@ This test consists in checking whether the textual alternative of each decorativ
 
 ### Criterion
 
-[1.2](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-1-2)
+[1.2](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-1-2)
 
 ###Test
 
-[1.2.5](http://references.modernisation.gouv.fr/referentiel-technique-0#test-1-2-5)
+[1.2.5](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-1-2-5)
 
 ### Description
 
-Pour chaque image bitmap de d&eacute;coration (balise `canvas`), le contenu entre `<canvas>` et `</canvas>` doit &ecirc;tre d&eacute;pourvu de contenus textuels, cette r&egrave;gle est-elle respect&eacute;e ?
+Pour chaque image bitmap de d&eacute;coration (balise `canvas`) sans l&eacute;gende v&eacute;rifie-t-elle ces conditions ?
+
+*  La balise `canvas` possède un attribut `aria-hidden="true"` ;
+*  Le contenu entre `<canvas>` et `</canvas>` est dépourvue de contenus textuels ;
+*  La balise `canvas` ou l’un de ses enfants est dépourvue de rôle, propriété ou état ARIA visant à labelliser l’image (`aria-label`, `aria-describedby`, `aria-labelledby` par exemple).
 
 ### Level
 
@@ -60,11 +64,39 @@ For each occurrence of true-result of **Test1**, raise a MessageA
 
 ##### Test2
 
-For each element of **Set2**, Check the presence of text between `<canvas>` tags.
+For each element of **Set3**, Check the presence of text between `<canvas>` tags.
 
 For each occurrence of true-result of **Test2**, raise a MessageB
 
 For each occurrence of false-result of **Test2**, raise a MessageC
+
+##### Test3
+
+For each element of **Set2**, Check the presence of an `aria-hidden` attribute with `true` value.
+
+For each occurrence of false-result of **Test3**, raise a MessageD
+
+##### Test4
+
+For each element of **Set3**, Check the presence of an `aria-hidden` attribute with `true` value.
+
+For each occurrence of false-result of **Test4**, raise a MessageB
+
+For each occurrence of true-result of **Test4**, raise a MessageC
+
+##### Test5 
+
+For each element of **Set2** (decorative `<canvas>` identified by a html marker), check that the `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes are missing on the tag or least one its children. 
+
+For each element returning false-result in **Test5**, raise a MessageE. 
+
+##### Test6 
+
+For each element of **Set3** (decorative `<canvas>` not identified by a html marker), check that the `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes are missing on the tag or least one its children. 
+
+For each element returning false in **Test6**, raise a MessageB.
+
+For each element returning true in **Test6**, raise a MessageC.
 
 #### Messages
 
@@ -82,26 +114,40 @@ For each occurrence of false-result of **Test2**, raise a MessageC
 -    parameter : text, Snippet
 -    present in source : yes
 
-##### MessageD : Check the nature of the image with a empty alternative
+##### MessageC : Check the nature of the image with a empty alternative
 
 -    code : CheckNatureOfElementWithEmptyAltAttribute
 -    status: Pre-qualified
 -    parameter : text, Snippet
 -    present in source : yes
 
+##### MessageD : Decorative image without aria-hidden attribute
+
+-    code : DecorativeElementWithNotEmptyAltAttribute
+-    status: Failed
+-    parameter : `"data"` attribute, text, Snippet
+-    present in source : yes
+
+##### MessageE : Decorative image with an Aria attribute
+
+-    code : DecorativeElementWithAriaAttribute
+-    status: Failed
+-    parameter : `"aria-label"` attribute, `"aria-describedby"` attribute, `"aria-labelledby"` attribute, Snippet
+-    present in source : yes
+
 ### Analysis
 
 #### Passed
 
-All the `canvas` tags are identified as decorative and don't have text between `<canvas>` tags (**Test1** returns false for all elements)
+All the `canvas` tags are identified as decorative and don't have text between `<canvas>` tags and have aria-hidden attribute with true value and don't have other aria attribute (**Test1** returns false for all elements and **Test3** and **Test5** returns true for all elements)
 
 #### Failed
 
-At least one `canvas` identified as decorative have text between `<canvas>` tags (**Test1** returns true at least one element)
+At least one `canvas` identified as decorative have text between `<canvas>` tags or not have aria-hidden attribute or have an aria attribute (**Test1** returns true at least one element or **Test3** or **Test5** returns false at least one element)
 
 #### Not Applicable
 
-The page has no `<canvas>` tag (**Set1** is empty)
+The page has no `canvas` tag (**Set1** is empty)
 
 #### Pre-qualified
 
