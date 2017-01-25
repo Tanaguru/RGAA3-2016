@@ -8,20 +8,20 @@ This test consists in checking whether the ARIA attribute of each decorative vec
 
 ### Criterion
 
-[1.2](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-1-2)
+[1.2](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-1-2)
 
 ###Test
 
-[1.2.4](http://references.modernisation.gouv.fr/referentiel-technique-0#test-1-2-4)
+[1.2.4](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-1-2-4)
 
 ### Description
 
-Chaque image vectorielle de d&eacute;coration (balise `<svg>`) non porteuse d'information et poss&eacute;dant une alternative v&eacute;rifie-t-elle ces conditions ? 
+Chaque image vectorielle de d&eacute;coration (balise `<svg>`) sans l&eacute;gende non porteuse d'information v&eacute;rifie-t-elle ces conditions ? 
  
- * La balise `<svg>` poss&egrave;de un `role="img"` 
+ * La balise `<svg>` poss&egrave;de un attribut `aria-hidden="true"` ;
+ * Les balises `<title>` et `<desc>` sont absentes ou vides ;
+ * La balise `<svg>` ou l'un de ses enfants est d&eacute;pourvue d'attribut `title` ;
  * La balise `<svg>` ou l'un de ses enfants est d&eacute;pourvue de role, propri&eacute;t&eacute; ou &eacute;tat ARIA visant &agrave; labelliser l'image vectorielle (`aria-label`, `aria-describedby`, `aria-labelledby` par exemple). 
- * Les balises `<title>` et `<desc>` sont absentes ou vides 
- * La balise `<svg>` ou l'un de ses enfants est d&eacute;pourvue d'attribut `title` 
 
 ### Level
 
@@ -55,7 +55,7 @@ All the elements of **Set1** identified neither as informative image, nor as dec
 
 #### Set4
 
-All the elements of **Set1** without a `"role"` attribute equals to  `"img"`.
+All the elements of **Set1** without a `"aria-hidden"` attribute equals to  `"true"`.
 
 #### Set5
 
@@ -123,9 +123,9 @@ For each element of **Set11**, raise a MessageH.
 
 #### Messages
 
-##### MessageA : Decorative svg without role img attribute 
+##### MessageA : Decorative svg without aria-hidden true attribute 
 
--    code : DecorativeSvgWithoutRoleImgAttribute
+-    code : DecorativeSvgWithoutAriaHiddenTrueAttribute
 -    status: Failed
 -    parameter : tag name, Snippet
 -    present in source : yes
@@ -187,7 +187,7 @@ The page has no `<svg>` tag (**Set1** is are empty)
 
 #### Failed
 
-At least one `<svg>` identified as decorative don't have a role img or have a `aria-label`, `aria-describedby`, `aria-labelledby` or `title` attribute or have a not empty `<title>` or `<desc>` as child tag (**Set4** OR **Set5** OR **Set6** OR **Set7** is not empty)
+At least one `<svg>` identified as decorative don't have a `aria-hidden` attribut with `true` value or have a `aria-label`, `aria-describedby`, `aria-labelledby` or `title` attribute or have a not empty `<title>` or `<desc>` as child tag (**Set4** OR **Set5** OR **Set6** OR **Set7** is not empty)
 
 #### Passed
 
