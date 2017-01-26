@@ -16,7 +16,12 @@ This test consists in checking whether each button associated with an image that
 
 ### Description
 
-Pour chaque bouton associ&eacute; &agrave; une image (balise `input` avec l'attribut `type="image"`) ayant un attribut `alt`, le contenu de cet attribut est-il pertinent (hors <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#cpCrit1-3" title="Cas particuliers pour le crit&egrave;re 1.3">cas particuliers</a>) ?
+Pour chaque bouton associ&eacute; &agrave; une image (balise `input` avec l'attribut `type="image"`) ayant un attribut `alt`, v&eacute;rifie-t-elle ces conditions (hors <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#cpCrit1-3" title="Cas particuliers pour le crit&egrave;re 1.3">cas particuliers</a>) ?
+
+ * Le contenu de l'attribut `alt` est pertinent ;
+ * S'il est pr&eacute;sent, le contenu de l'attribut `title` est identique au contenu de l'attribut `alt` ;
+ * S'il est pr&eacute;sent, le contenu de la propri&eacute;t&eacute; `aria-label` est identique au contenu de l'attribut alt ;
+ * S'il est pr&eacute;sent, le contenu du passage de texte lié via la propriété aria-labelledby est identique au contenu de l'attribut alt.
 
 ### Level
 
@@ -50,6 +55,24 @@ For each occurrence of true-result of **Test1**, raise a MessageA.
 
 For each occurrence of false-result of **Test1**, raise a MessageB
 
+#### Test2
+
+For all elements return false-result of **Test1**, check whether the content of the `"title"` attribute is equal to the `"alt"` attribute.
+
+For each occurrence of false-result of **Test2**, raise a MessageC.
+
+#### Test3
+
+For all elements return false-result of **Test1**, check whether the content of the `"aria-label"` attribute is equal to the `"alt"` attribute.
+
+For each occurrence of false-result of **Test3**, raise a MessageC.
+
+#### Test4
+
+For all elements return false-result of **Test1**, check whether the text associated with the `"aria-labelledby"` attribute is equal to the `"alt"` attribute.
+
+For each occurrence of false-result of **Test4**, raise a MessageC.
+
 ##### MessageA 
 
 -    code : **NotPertinentAlt** 
@@ -64,11 +87,20 @@ For each occurrence of false-result of **Test1**, raise a MessageB
 -    parameter : `"alt"` attribute, `"src"` attribute, tag name
 -    present in source : yes
 
+##### MessageC 
+
+-    code : **AlternativeNotEqualAlt** 
+-    status: Failed
+-    parameter : `"alt"` attribute, `"title"` or `"aria-label"` attribute or text associated with `"aria-labelledby"`, `"src"` attribute, tag name
+-    present in source : yes
+
 ### Analysis
 
 #### Failed
 
 At least one `<input>` tag with a `"type"` attribute equals to "image" has an irrelevant `"alt"` attribute (**Test1** returns true for at least one element)
+
+At least one `<input>` tag with a `"title"` or `"aria-label"` attribute or the text associated with a `"aria-labelledby"` is not equal to the `"alt"` attribute (**Test3**, **Test4** or **Test5** returns false for at least one element)
 
 #### Pre-qualified
 
