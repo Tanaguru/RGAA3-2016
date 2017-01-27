@@ -22,8 +22,7 @@ Chaque image objet (balise `object` avec l'attribut `type="image/..."`) porteuse
  
  * L'image objet est imm&eacute;diatement suivie d'un lien adjacent permettant d'afficher une page ou un passage de texte contenant une alternative pertinente. 
  * Un m&eacute;canisme permet &agrave; l'utilisateur de remplacer l'image objet par un texte alternatif pertinent 
- * Un m&eacute;canisme permet &agrave; l'utilisateur de remplacer l'image objet par une image poss&eacute;dant une alternative pertinente. 
-
+ * Un m&eacute;canisme permet &agrave; l'utilisateur de remplacer l'image objet par une image poss&eacute;dant une alternative pertinente.
 
 ### Level
 
