@@ -66,7 +66,7 @@ For each occurrence of false-result of **Test2**, raise a MessageB.
 ##### MessageA : Check nature of image and the presence of an alternative mechanism
 
 -    code : **CheckNatureOfImageAndPresenceOfAlternativeMechanism** 
--    status: Pre-Qualified
+-    status: Pre-Qualified (NMI-Neutral)
 -    parameter : text, `"src"` attribute, tag name, snippet
 -    present in source : yes
 

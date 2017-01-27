@@ -109,28 +109,28 @@ For each occurrence of false-result of **Test6**, raise a MessageF.
 ##### MessageB 
 
 -    code : **CheckPertinenceOfAltAttributeOfInformativeImage** 
--    status: Pre-Qualified
+-    status: Pre-Qualified (NMI-Passed)
 -    parameter : `"alt"` attribute, `"title"` attribute, `"href"` attribute, tag name
 -    present in source : yes
 
 ##### MessageC
 
 -    code : **TitleNotIdenticalToAlt** 
--    status: Pre-Qualified
+-    status: Pre-Qualified (NMI-Failed)
 -    parameter : `"alt"` attribute, `"title"` attribute, `"href"` attribute, tag name
 -    present in source : yes
 
 ##### MessageD
 
 -    code : **CheckNatureOfImageWithNotPertinentAlt** 
--    status: Pre-Qualified
+-    status: Pre-Qualified (NMI-Failed)
 -    parameter : `"alt"` attribute, `"title"` attribute, `"href"` attribute, tag name
 -    present in source : yes
 
 ##### MessageE
 
 -    code : **CheckNatureOfImageAndAltPertinence** 
--    status: Pre-Qualified
+-    status: Pre-Qualified (NMI-Neutral)
 -    parameter : `"alt"` attribute, `"title"` attribute, `"href"` attribute, tag name
 -    present in source : yes
 
