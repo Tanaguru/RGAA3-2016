@@ -79,6 +79,10 @@ For each element of **Set3**, raise a MessageB.
 -    parameter : text, tag name, snippet
 -    present in source : yes
 
+### Accede Web guidelines
+
+ * http://www.accede-web.com/notices/html-css-javascript/13-recommandations-additionnelles/alternative-contenu-multimedia-video-audio-object/
+
 ### Analysis
 
 #### Not Applicable 

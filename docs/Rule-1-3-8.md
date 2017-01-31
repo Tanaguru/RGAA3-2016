@@ -86,13 +86,13 @@ All the elements of **Set6** with a `"role"` attribute with value `"img"`
 
 ##### Test1
 
-For each element of **Set3** and **Set4**, check the presence of the `"role"` attribute with value `"img"`.
+For each element of **Set3** and **Set4**, check the presence of the `"role"` attribute with value `"img"`, the `"aria-label"` attribute and the `<desc>` child tag.
 
 For each occurrence of false-result of **Test1**, raise a MessageA
 
 ##### Test2
 
-For each element of **Set4** and **Set6**, check the presence of the `"role"` attribute with value `"img"`.
+For each element of **Set4** and **Set6**, check the presence of the `"role"` attribute with value `"img"`, the `"aria-label"` attribute and the `<desc>` child tag.
 
 For each occurrence of false-result of **Test2**, raise a MessageA
 
@@ -150,7 +150,7 @@ For each occurrence of **Set6** and **Set7** that return a true on **Test3**, **
 
 For each occurrence of **Set8** and **Set9** that return a true on **Test4**, **Test6**, **Test8** AND **Test10**, raise a MessageE
 
-##### MessageA : `svg` without role `img` attribute 
+##### MessageA : `svg` without role `img` attribute or `aria-label` attribute or `desc` child tag
 
 -    code : SvgWithoutRoleImage
 -    status: Failed
@@ -161,29 +161,33 @@ For each occurrence of **Set8** and **Set9** that return a true on **Test4**, **
 
 -    code : InformativeSvgWithNotPertinentAlternative
 -    status: Pre-Qualified (NMI-Passed)
--    parameter : `"role"` attribute, `"aria-label"` attribute, `"title"` attribute, tag name, Snippet
+-    parameter : `"role"` attribute, `"aria-label"` attribute, `"title"` attribute, `"desc"` child tag, tag name, Snippet
 -    present in source : yes
 
 ##### MessageC : Check nature of svg with bad alternative 
 
 -    code : CheckNatureOfSvgWithNotPertinentAlternative
 -    status: Pre-Qualified (NMI-Failed)
--    parameter : `"role"` attribute, `"aria-label"` attribute, `"title"` attribute, tag name, Snippet
+-    parameter : `"role"` attribute, `"aria-label"` attribute, `"title"` attribute, `"desc"` child tag, tag name, Snippet
 -    present in source : yes
 
 ##### MessageD : Check alternative pertinence of informative `svg` 
 
 -    code : CheckPertinenceOfAlternativeOfInformativeSvg
 -    status: Pre-Qualified (NMI-Neutral)
--    parameter : `"role"` attribute, `"aria-label"` attribute, `"title"` attribute, tag name, Snippet
+-    parameter : `"role"` attribute, `"aria-label"` attribute, `"title"` attribute, `"desc"` child tag, tag name, Snippet
 -    present in source : yes
 
 ##### MessageE : Check nature of svg and alternative pertinence 
 
 -    code : CheckNatureOfSvgAndAlternativePertinence
 -    status: Pre-Qualified (NMI-Neutral)
--    parameter : `"role"` attribute, `"aria-label"` attribute, `"title"` attribute, tag name, Snippet
+-    parameter : `"role"` attribute, `"aria-label"` attribute, `"title"` attribute, `"desc"` child tag, tag name, Snippet
 -    present in source : yes
+
+### Accede Web guidelines
+
+ * http://www.accede-web.com/notices/editoriale/4-images/#ancre-02
 
 ### Analysis
 

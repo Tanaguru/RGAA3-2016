@@ -94,6 +94,11 @@ For each occurrence of false-result of **Test4**, raise a MessageC.
 -    parameter : `"alt"` attribute, `"title"` or `"aria-label"` attribute or text associated with `"aria-labelledby"`, `"src"` attribute, tag name
 -    present in source : yes
 
+### Accede Web guidelines
+
+ * http://www.accede-web.com/notices/html-css-javascript/6-images-icones/6-3-balise-img/
+ * http://www.accede-web.com/notices/editoriale/4-images/#ancre-02
+
 ### Analysis
 
 #### Failed

@@ -179,6 +179,11 @@ For each element of **Set11**, raise a MessageH.
 -    parameter : tag name, Snippet
 -    present in source : yes
 
+### Accede Web guidelines
+
+ * http://www.accede-web.com/notices/html-css-javascript/6-images-icones/6-2-svg-images-vectorielles/
+ * http://www.accede-web.com/notices/editoriale/4-images/#ancre-01
+
 ### Analysis
 
 #### Not Applicable

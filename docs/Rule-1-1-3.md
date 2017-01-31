@@ -51,9 +51,16 @@ For each occurrence of false-result of **Test1**, raise a MessageA
 ##### MessageA 
 
 -    code : **AltMissing** 
+- 	 message (fr) : "L'attribut alt est absent pour les éléments suivants : "
+- 	 message (en) : "The alt attribute is missing on the following elements : "
 -    status: Failed
 -    parameter : `"src"` attribute, tag name, snippet
 -    present in source : yes
+
+### Accede Web guidelines
+
+ * http://www.accede-web.com/notices/html-css-javascript/6-images-icones/6-3-balise-img/
+ * http://www.accede-web.com/notices/editoriale/4-images/#ancre-02
 
 ### Analysis
 

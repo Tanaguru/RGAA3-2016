@@ -114,14 +114,18 @@ For each element returning true in **Test6**, raise a MessageD.
 ##### MessageC : Check the nature of the image with a not empty alternative
 
 -    code : CheckNatureOfElementWithNotEmptyAltAttribute
--    status: Pre-qualified (NMI-Failed)
+- 	 message (fr) : "Les images suivantes ont un attribut alt et title vides, vérifier qu'il s'agit d'images de décoration :"
+- 	 message (en) : "The following images have an empty alt and title attribute, please check they are decorative:"
+-    status: Pre-qualified (NMI-Neutral)
 -    parameter : Snippet
 -    present in source : yes
 
 ##### MessageD : Check the nature of the image with a empty alternative
 
 -    code : CheckNatureOfElementWithEmptyAltAttribute
--    status: Pre-qualified (NMI-Passed)
+- 	 message (fr) : "Les images suivantes ont un attribut alt ou title non vide, vérifier qu'il s'agit d'images porteuses d'information :"
+- 	 message (en) : "The following images have a not empty alt or title attribute , please check they are not decorative:"
+-    status: Pre-qualified (NMI-Neutral)
 -    parameter : Snippet
 -    present in source : yes
 
@@ -131,6 +135,11 @@ For each element returning true in **Test6**, raise a MessageD.
 -    status: Failed
 -    parameter : `"alt"` attribute, `"aria-label"` attribute, `"aria-describedby"` attribute, `"aria-labelledby"` attribute, `"src"` attribute, Snippet
 -    present in source : yes
+
+### Accede Web guidelines
+
+http://www.accede-web.com/notices/html-css-javascript/6-images-icones/6-3-balise-img/
+http://www.accede-web.com/notices/editoriale/4-images/#ancre-01
 
 ### Analysis
 

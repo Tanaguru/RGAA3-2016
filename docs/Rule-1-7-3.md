@@ -78,6 +78,11 @@ For each element of **Set3**, raise a MessageB.
 -    parameter : `"src"` attribute, tag name, snippet
 -    present in source : yes
 
+### Accede Web guidelines
+
+ * http://www.accede-web.com/notices/editoriale/4-images/#ancre-04
+ * http://www.accede-web.com/notices/editoriale/8-contenus-riches-multimedias/8-1-description-contenus-riches-graphiques-cartographies-plans-flash/
+
 ### Analysis
 
 #### Not Applicable 

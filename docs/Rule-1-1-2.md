@@ -49,9 +49,17 @@ For each element of **Set1**, test the presence of an `"alt"` attribute. For eac
 ##### MessageA : Missing Alt attribute
 
 -    code : **AltMissing** 
+- 	 message (fr) : "L'attribut alt est absent pour les éléments suivants : "
+- 	 message (en) : "The alt attribute is missing on the following elements : "
 -    status: Failed
 -    parameter : `"href"` attribute, tag name, snippet
 -    present in source : yes
+
+### Accede Web guidelines
+
+ * http://www.accede-web.com/notices/html-css-javascript/13-recommandations-additionnelles/alt-image-mappee-area/
+ * http://www.accede-web.com/notices/editoriale/4-images/#ancre-01
+ * http://www.accede-web.com/notices/editoriale/4-images/#ancre-02
 
 ### Analysis
 

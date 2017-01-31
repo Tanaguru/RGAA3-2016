@@ -141,6 +141,11 @@ For each occurrence of false-result of **Test6**, raise a MessageF.
 -    parameter : `"alt"` attribute, `"title"` attribute, `"src"` attribute, tag name
 -    present in source : yes
 
+### Accede Web guidelines
+
+ * http://www.accede-web.com/notices/html-css-javascript/13-recommandations-additionnelles/alt-image-mappee-area/
+ * http://www.accede-web.com/notices/editoriale/4-images/#ancre-02
+
 ### Analysis
 
 #### Failed

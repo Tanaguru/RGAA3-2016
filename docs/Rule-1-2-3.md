@@ -135,6 +135,10 @@ For each element returning true in **Test6**, raise a MessageC.
 -    parameter : `"aria-label"` attribute, `"aria-describedby"` attribute, `"aria-labelledby"` attribute, Snippet
 -    present in source : yes
 
+### Accede Web guidelines
+
+http://www.accede-web.com/notices/editoriale/4-images/#ancre-01
+
 ### Analysis
 
 #### Passed

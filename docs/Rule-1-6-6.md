@@ -86,6 +86,12 @@ For each element of **Set4** and **Set5**, raise a MessageB.
 -    parameter : text, `"aria-label"` attribute, tag name, snippet
 -    present in source : yes
 
+### Accede Web guidelines
+
+ * http://www.accede-web.com/notices/html-css-javascript/13-recommandations-additionnelles/alternative-contenu-multimedia-video-audio-object/
+ * http://www.accede-web.com/notices/editoriale/4-images/#ancre-04
+ * http://www.accede-web.com/notices/editoriale/8-contenus-riches-multimedias/8-1-description-contenus-riches-graphiques-cartographies-plans-flash/
+
 ### Analysis
 
 #### Not Applicable 
