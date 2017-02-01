@@ -100,6 +100,8 @@ For each element returning true in **Test6**, raise a MessageD.
 ##### MessageA : Decorative image with not empty alternative
 
 -    code : DecorativeElementWithNotEmptyAltAttribute
+- 	 message (fr) : "Les images de d&eacute;coration suivantes ont un attribut <code>alt</code> non vide :"
+- 	 message (en) : "The following decorative images have a not empty <code>alt</code> attribute :"
 -    status: Failed
 -    parameter : `"alt"` attribute, `"title"` attribute, `"src"` attribute, Snippet
 -    present in source : yes
@@ -107,6 +109,8 @@ For each element returning true in **Test6**, raise a MessageD.
 ##### MessageB : Decorative image with a title attribute
 
 -    code : DecorativeElementWithTitleAttribute
+- 	 message (fr) : "Les images suivantes ont un attribut alt et title vides, vérifier qu'il s'agit d'images de décoration :"
+- 	 message (en) : "The following decorative images have a <code>title</code> attribute:"
 -    status: Failed
 -    parameter : `"alt"` attribute, `"title"` attribute, `"src"` attribute, Snippet
 -    present in source : yes
@@ -132,6 +136,8 @@ For each element returning true in **Test6**, raise a MessageD.
 ##### MessageE : Decorative image with an Aria attribute
 
 -    code : DecorativeElementWithAriaAttribute
+- 	 message (fr) : ""
+- 	 message (en) : ""
 -    status: Failed
 -    parameter : `"alt"` attribute, `"aria-label"` attribute, `"aria-describedby"` attribute, `"aria-labelledby"` attribute, `"src"` attribute, Snippet
 -    present in source : yes
