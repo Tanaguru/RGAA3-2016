@@ -65,8 +65,6 @@ For each occurrence of false-result of **Test3**, raise a MessageD
 
 For each element of **Set3**, Check the presence of an `aria-hidden` attribute with `true` value.
 
-For each occurrence of false-result of **Test4**, raise a MessageB
-
 For each occurrence of true-result of **Test4**, raise a MessageC
 
 ##### Test5 
@@ -79,23 +77,14 @@ For each element returning false-result in **Test5**, raise a MessageE.
 
 For each element of **Set3** (decorative `<embed>` not identified by a html marker), check that the `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes are missing on the tag or least one its children. 
 
-For each element returning false in **Test6**, raise a MessageB.
-
 For each element returning true in **Test6**, raise a MessageC.
 
 #### Messages
 
-##### MessageB : Check the nature of the image with a not empty alternative
-
--    code : CheckNatureOfElementWithNotEmptyAltAttribute
--    status: Pre-qualified
--    parameter : text, Snippet
--    present in source : yes
-
 ##### MessageC : Check the nature of the image with a empty alternative
 
--    code : CheckNatureOfElementWithEmptyAltAttribute
--    status: Pre-qualified
+-    code : CheckNatureOfElementWithEmptyAlternative
+-    status: Pre-qualified (NMI-Neutral)
 -    parameter : text, Snippet
 -    present in source : yes
 
@@ -113,9 +102,20 @@ For each element returning true in **Test6**, raise a MessageC.
 -    parameter : `"aria-label"` attribute, `"aria-describedby"` attribute, `"aria-labelledby"` attribute, Snippet
 -    present in source : yes
 
+#### Rules remark
+
+ * CheckNatureOfElementWithEmptyAlternative (fr): Les images suivantes n'ont pas d'alternative, v&eacute;rifier que ce sont bien des images de d&eacute;coration :
+ * CheckNatureOfElementWithEmptyAltAttribute (en): The following images have no alternative, please check they are decorative:
+
+ * DecorativeElementWithTitleAttribute (fr): Les images de d&eacute;coration suivantes ont un attribut <code>title</code> :
+ * DecorativeElementWithTitleAttribute (en): The following decorative images have a <code>title</code> attribute:
+
+ * DecorativeElementWithAriaAttribute (fr): Les images de d&eacute;coration suivantes ont une ou plusieurs propri&eacute;t&eacute; <code>ARIA</code> :
+ * DecorativeElementWithAriaAttribute (en): The following decorative images have one or more <code>ARIA</code> properties:
+
 ### Accede Web guidelines
 
- * http://www.accede-web.com/notices/editoriale/4-images/#ancre-01
+ * Rgaa32016-1-2-6-Accedeweb-EDIT-4-1
 
 ### Analysis
 

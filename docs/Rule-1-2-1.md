@@ -125,13 +125,13 @@ For each element returning true in **Test6**, raise a MessageD.
 #### Rules remark
 
  * DecorativeElementWithNotEmptyAltAttribute (fr): Les images de d&eacute;coration suivantes ont un attribut <code>alt</code> non vide :
- * DecorativeElementWithNotEmptyAltAttribute (en): The following decorative images have a not empty <code>alt</code> attribute:
+ * DecorativeElementWithNotEmptyAltAttribute (en): The following decorative images have a not empty <code>alt</code> attribute :
 
  * DecorativeElementWithTitleAttribute (fr): Les images de d&eacute;coration suivantes ont un attribut <code>title</code> :
  * DecorativeElementWithTitleAttribute (en): The following decorative images have a <code>title</code> attribute:
 
  * CheckNatureOfElementWithEmptyAltAttribute (fr): Les images suivantes ont un attribut <code>alt</code> vide et aucun attribut <code>title</code>, v&eacute;rifier que ce sont bien des images de d&eacute;coration :
- * CheckNatureOfElementWithEmptyAltAttribute (en): The following images have an empty alt and no title attribute, please check they are decorative:
+ * CheckNatureOfElementWithEmptyAltAttribute (en): The following images have an empty alt and no title attribute , please check they are decorative:
 
  * DecorativeElementWithAriaAttribute (fr): Les images de d&eacute;coration suivantes ont une ou plusieurs propri&eacute;t&eacute; <code>ARIA</code> :
  * DecorativeElementWithAriaAttribute (en): The following decorative images have one or more <code>ARIA</code> properties:
