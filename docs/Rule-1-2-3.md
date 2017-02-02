@@ -66,8 +66,6 @@ For each occurrence of true-result of **Test1**, raise a MessageA
 
 For each element of **Set3**, Check the presence of text between `<object>` tags.
 
-For each occurrence of true-result of **Test2**, raise a MessageB
-
 For each occurrence of false-result of **Test2**, raise a MessageC
 
 ##### Test3
@@ -79,8 +77,6 @@ For each occurrence of false-result of **Test3**, raise a MessageD
 ##### Test4
 
 For each element of **Set3**, Check the presence of an `aria-hidden` attribute with `true` value.
-
-For each occurrence of false-result of **Test4**, raise a MessageB
 
 For each occurrence of true-result of **Test4**, raise a MessageC
 
@@ -94,8 +90,6 @@ For each element returning false-result in **Test5**, raise a MessageE.
 
 For each element of **Set3** (decorative `<object>` not identified by a html marker), check that the `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes are missing on the tag or least one its children. 
 
-For each element returning false in **Test6**, raise a MessageB.
-
 For each element returning true in **Test6**, raise a MessageC.
 
 #### Messages
@@ -107,13 +101,6 @@ For each element returning true in **Test6**, raise a MessageC.
 -    parameter : `"data"` attribute, text, Snippet
 -    present in source : yes
 
-##### MessageB : Check the nature of the image with a not empty alternative
-
--    code : CheckNatureOfElementWithNotEmptyAltAttribute
--    status: Pre-qualified
--    parameter : text, Snippet
--    present in source : yes
-
 ##### MessageC : Check the nature of the image with a empty alternative
 
 -    code : CheckNatureOfElementWithEmptyAltAttribute
@@ -123,7 +110,7 @@ For each element returning true in **Test6**, raise a MessageC.
 
 ##### MessageD : Decorative image without aria-hidden attribute
 
--    code : DecorativeElementWithNotEmptyAltAttribute
+-    code : DecorativeElementWithoutAriaHiddenAttribute
 -    status: Failed
 -    parameter : `"data"` attribute, text, Snippet
 -    present in source : yes
@@ -135,15 +122,31 @@ For each element returning true in **Test6**, raise a MessageC.
 -    parameter : `"aria-label"` attribute, `"aria-describedby"` attribute, `"aria-labelledby"` attribute, Snippet
 -    present in source : yes
 
+#### Rules remark
+
+ * DecorativeElementWithNotEmptyAltAttribute (fr): Les images de d&eacute;coration suivantes ont un attribut <code>alt</code> non vide :
+ * DecorativeElementWithNotEmptyAltAttribute (en): The following decorative images have a not empty <code>alt</code> attribute :
+
+ * CheckNatureOfElementWithEmptyAltAttribute (fr): Les images suivantes ont un attribut <code>alt</code> vide et aucun attribut <code>title</code>, v&eacute;rifier que ce sont bien des images de d&eacute;coration :
+ * CheckNatureOfElementWithEmptyAltAttribute (en): The following images have an empty alt and no title attribute , please check they are decorative:
+
+ * DecorativeElementWithoutAriaHiddenAttribute (fr): Les images de d&eacute;coration suivantes n'ont pas d'attribut <code>aria-hidden="true"</code> :
+ * DecorativeElementWithoutAriaHiddenAttribute (en): The following decorative images have no <code>aria-hidden="true"</code> attribute:
+
+ * DecorativeElementWithAriaAttribute (fr): Les images de d&eacute;coration suivantes ont une ou plusieurs propri&eacute;t&eacute; <code>ARIA</code> :
+ * DecorativeElementWithAriaAttribute (en): The following decorative images have one or more <code>ARIA</code> properties:
+
 ### Accede Web guidelines
 
-http://www.accede-web.com/notices/editoriale/4-images/#ancre-01
+ * Rgaa32016-1-2-3-Accedeweb-EDIT-4-1
 
 ### Analysis
 
 #### Passed
 
-All the `<object type="image>` tags are identified as decorative and don't have text between `<object>` tags and have aria-hidden attribute with true value and don't have other aria attribute (**Test1** returns false for all elements and **Test3** and **Test5** returns true for all elements)
+All the `<object type="image">` tags are identified as decorative and don't have text between `<object>` tags and have aria-hidden attribute with true value and don't have other aria attribute (**Test1** returns false for all elements and **Test3** and **Test5** returns true for all elements)
+
+All the `<object type="image">` of the page not identified as decorative image and have an alternative not empty (All element return false-result in **Test2**, **Test4** OR **Test6**)
 
 #### Failed
 
