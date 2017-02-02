@@ -130,14 +130,11 @@ For each element returning true in **Test6**, raise a MessageD.
  * DecorativeElementWithTitleAttribute (fr): Les images de d&eacute;coration suivantes ont un attribut <code>title</code> :
  * DecorativeElementWithTitleAttribute (en): The following decorative images have a <code>title</code> attribute:
 
- * CheckNatureOfElementWithNotEmptyAltAttribute (fr): Les images suivantes ont un attribut alt et title vides, v&eacute;rifier qu'il s'agit d'images de d&eacute;coration :
- * CheckNatureOfElementWithNotEmptyAltAttribute (en): The following images have an empty alt and title attribute, please check they are decorative:
-
- * CheckNatureOfElementWithEmptyAltAttribute (fr): Les images suivantes ont un attribut alt ou title non vide, v&eacute;rifier qu'il s'agit d'images porteuses d'information :
- * CheckNatureOfElementWithEmptyAltAttribute (en): The following images have a not empty alt or title attribute , please check they are not decorative:
+ * CheckNatureOfElementWithEmptyAltAttribute (fr): Les images suivantes ont un attribut <code>alt</code> vide et aucun attribut <code>title</code>, v&eacute;rifier que ce sont bien des images de d&eacute;coration :
+ * CheckNatureOfElementWithEmptyAltAttribute (en): The following images have an empty alt and no title attribute , please check they are decorative:
 
  * DecorativeElementWithAriaAttribute (fr): Les images de d&eacute;coration suivantes ont une ou plusieurs propri&eacute;t&eacute; <code>ARIA</code> :
- * DecorativeElementWithAriaAttribute (en): The following decorative images have one or more <code>ARIA</code> properties :
+ * DecorativeElementWithAriaAttribute (en): The following decorative images have one or more <code>ARIA</code> properties:
 
 ### Accede Web guidelines
 
