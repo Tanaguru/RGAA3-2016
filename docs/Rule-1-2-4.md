@@ -71,18 +71,6 @@ All the elements of **Set1** with a `"title"` attribute.
 
 #### Set8
 
-All the elements of **Set2** with a not empty `<title>` or `<desc>` tag as child tag.
-
-#### Set9
-
-All the elements of **Set2** with a `"aria-label"`, `"aria-labelledby"` or  `"aria-describedby"` attribute on the element or one of its children.
-
-#### Set10
-
-All the elements of **Set2** with a `"title"` attribute.
-
-#### Set11
-
 All the elements of **Set2** without `"title"`, `"aria-label"`, `"aria-labelledby"`, `"aria-describedby"` attributes, without a not empty `<title>` or `<desc>` tag as child tag and with a `"role"` attribute equals to  `"img"`.
 
 ### Process
@@ -108,18 +96,6 @@ For each element of **Set7**, raise a MessageD.
 ##### Test5 
 
 For each element of **Set8**, raise a MessageE.
-
-##### Test6 
-
-For each element of **Set9**, raise a MessageF.
-
-##### Test7 
-
-For each element of **Set10**, raise a MessageG.
-
-##### Test8 
-
-For each element of **Set11**, raise a MessageH.
 
 #### Messages
 
@@ -151,44 +127,42 @@ For each element of **Set11**, raise a MessageH.
 -    parameter : tag name, Snippet
 -    present in source : yes
 
-##### MessageE : Suspected informative svg with a not empty `<title>` or  `<desc>` child tag
-
--    code : SuspectedInformativeSvgWithDescOrTitleChildTag
--    status: Pre-Qualified
--    parameter : tag name
--    present in source : yes
-
-##### MessageF : Suspected informative svg with aria attribute on element or child
-
--    code : SuspectedInformativeSvgWithAriaAttributeDetectedOnElementOrChild
--    status: Pre-Qualified
--    parameter : tag name, Snippet
--    present in source : yes
-
-##### MessageG : Suspected informative svg with title attribute on element or child
-
--    code : SuspectedInformativeSvgWithTitleAttributeOnElementOrChild
--    status: Pre-Qualified
--    parameter : tag name, Snippet
--    present in source : yes
-
-##### MessageH : Suspected decorative svg without alternative
+##### MessageE : Suspected decorative svg without alternative
 
 -    code : SuspectedWellFormedDecorativeSvg
--    status: Pre-Qualified
+-    status: Pre-Qualified (NMI-Neutral)
 -    parameter : tag name, Snippet
 -    present in source : yes
+
+#### Rules remark
+
+ * DecorativeSvgWithoutAriaHiddenTrueAttribute (fr): Les images svg de d&eacute;coration suivantes n'ont pas d'attribut <code>aria-hidden="true"</code> :
+ * DecorativeSvgWithoutAriaHiddenTrueAttribute (en): The following decorative svg images have no <code>aria-hidden="true"</code> attribute:
+
+ * DecorativeSvgWithNotEmptyTitleOrDescTags (fr): Les images svg de d&eacute;coration suivantes ont des balises enfant de type <code>title</code> ou <code>desc</code> :
+ * DecorativeSvgWithNotEmptyTitleOrDescTags (en): The following decorative svg images have child tags <code>title</code> or <code>desc</code>:
+
+ * DecorativeSvgOrChildrenWithAriaAttribute (fr): Les images svg de d&eacute;coration suivantes, ou l'un de leurs enfants, ont un ou plusieurs attributs ARIA:
+ * DecorativeSvgOrChildrenWithAriaAttribute (en): The following decorative svg images or childdren have one or more ARIA attribute:
+
+ * DecorativeSvgWithTitleAttribute (fr): Les images svg de d&eacute;coration suivantes, ou l'un de leurs enfants, ont un attribut <code>title</code> :
+ * DecorativeSvgWithTitleAttribute (en): The following decorative svg images or childdren have a <code>title</code> attribute:
+
+ * SuspectedWellFormedDecorativeSvg (fr): Les images vectorielles suivantes ont une alternative vide, v&eacute;rifier que ce sont bien des images de d&eacute;coration :
+ * SuspectedWellFormedDecorativeSvg (en): The following vectorial images have an empty alternative, please check they are decorative:
 
 ### Accede Web guidelines
 
- * http://www.accede-web.com/notices/html-css-javascript/6-images-icones/6-2-svg-images-vectorielles/
- * http://www.accede-web.com/notices/editoriale/4-images/#ancre-01
+ * Rgaa32016-1-2-4-Accedeweb-HTML-6-2
+ * Rgaa32016-1-2-4-Accedeweb-EDIT-4-1
 
 ### Analysis
 
 #### Not Applicable
 
 The page has no `<svg>` tag (**Set1** is are empty)
+
+All the `<svg>` not identified as decorative, have role img, no `aria-label`, `aria-describedby`, `aria-labelledby` or `title` attributes, no `<title>` or `<desc>` as child tag (**Set8** are empty)
 
 #### Failed
 

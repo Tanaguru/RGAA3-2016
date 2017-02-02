@@ -111,7 +111,7 @@ For each element returning true in **Test6**, raise a MessageD.
 ##### MessageD : Check the nature of the image with a empty alternative
 
 -    code : CheckNatureOfElementWithEmptyAltAttribute
--    status: Pre-qualified
+-    status: Pre-qualified (NMI-Neutral)
 -    parameter : Snippet
 -    present in source : yes
 
