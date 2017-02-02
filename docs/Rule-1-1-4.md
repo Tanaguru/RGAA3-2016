@@ -58,6 +58,11 @@ For each element of Set1, produce a MessageA
 -    parameter : `"alt"` attribute, `"src"` attribute, tag name
 -    present in source : yes
 
+#### Rules remark
+
+ * CheckALinkIsAssociatedWithTheServerSidedImageMap (en): Please check a link is associated with the following server-sided map images : 
+ * CheckALinkIsAssociatedWithTheServerSidedImageMap (fr): V&eacute;rifier qu'un lien est associ&eacute; avec les images r&eacute;actives cot&eacute; serveur suivantes :  
+
 ### Analysis
 
 #### Not Applicable

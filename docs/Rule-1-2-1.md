@@ -72,14 +72,12 @@ For each element returning false in **Test2**, raise a MessageB.
 
 For each element of **Set3** (`<img>` tags not identified as decorative image), check that the content of the `"alt"` attribute empty. 
 
-For each element returning false in **Test3**, raise a MessageC.
 For each element returning true in **Test3**, raise a MessageD.
 
 ##### Test4 
 
 For each element of **Set3** (decorative `<img>` identified by a html marker), check that the `"title"` attribute is missing. 
 
-For each element returning false in **Test4**, raise a MessageC.
 For each element returning true in **Test4**, raise a MessageD.
 
 ##### Test5 
@@ -92,7 +90,6 @@ For each element returning false in **Test5**, raise a MessageE.
 
 For each element of **Set3** (decorative `<img>` identified by a html marker), check that the `"aria-label"`, `"aria-describedby"` and `"aria-labelledby"` attributes are missing. 
 
-For each element returning false in **Test6**, raise a MessageC.
 For each element returning true in **Test6**, raise a MessageD.
 
 #### Messages
@@ -100,8 +97,6 @@ For each element returning true in **Test6**, raise a MessageD.
 ##### MessageA : Decorative image with not empty alternative
 
 -    code : DecorativeElementWithNotEmptyAltAttribute
-- 	 message (fr) : "Les images de d&eacute;coration suivantes ont un attribut <code>alt</code> non vide :"
-- 	 message (en) : "The following decorative images have a not empty <code>alt</code> attribute :"
 -    status: Failed
 -    parameter : `"alt"` attribute, `"title"` attribute, `"src"` attribute, Snippet
 -    present in source : yes
@@ -109,26 +104,13 @@ For each element returning true in **Test6**, raise a MessageD.
 ##### MessageB : Decorative image with a title attribute
 
 -    code : DecorativeElementWithTitleAttribute
-- 	 message (fr) : "Les images suivantes ont un attribut alt et title vides, vérifier qu'il s'agit d'images de décoration :"
-- 	 message (en) : "The following decorative images have a <code>title</code> attribute:"
 -    status: Failed
 -    parameter : `"alt"` attribute, `"title"` attribute, `"src"` attribute, Snippet
--    present in source : yes
-
-##### MessageC : Check the nature of the image with a not empty alternative
-
--    code : CheckNatureOfElementWithNotEmptyAltAttribute
-- 	 message (fr) : "Les images suivantes ont un attribut alt et title vides, vérifier qu'il s'agit d'images de décoration :"
-- 	 message (en) : "The following images have an empty alt and title attribute, please check they are decorative:"
--    status: Pre-qualified (NMI-Neutral)
--    parameter : Snippet
 -    present in source : yes
 
 ##### MessageD : Check the nature of the image with a empty alternative
 
 -    code : CheckNatureOfElementWithEmptyAltAttribute
-- 	 message (fr) : "Les images suivantes ont un attribut alt ou title non vide, vérifier qu'il s'agit d'images porteuses d'information :"
-- 	 message (en) : "The following images have a not empty alt or title attribute , please check they are not decorative:"
 -    status: Pre-qualified (NMI-Neutral)
 -    parameter : Snippet
 -    present in source : yes
@@ -136,22 +118,39 @@ For each element returning true in **Test6**, raise a MessageD.
 ##### MessageE : Decorative image with an Aria attribute
 
 -    code : DecorativeElementWithAriaAttribute
-- 	 message (fr) : ""
-- 	 message (en) : ""
 -    status: Failed
 -    parameter : `"alt"` attribute, `"aria-label"` attribute, `"aria-describedby"` attribute, `"aria-labelledby"` attribute, `"src"` attribute, Snippet
 -    present in source : yes
 
+#### Rules remark
+
+ * DecorativeElementWithNotEmptyAltAttribute (fr): Les images de d&eacute;coration suivantes ont un attribut <code>alt</code> non vide :
+ * DecorativeElementWithNotEmptyAltAttribute (en): The following decorative images have a not empty <code>alt</code> attribute :
+
+ * DecorativeElementWithTitleAttribute (fr): Les images de d&eacute;coration suivantes ont un attribut <code>title</code> :
+ * DecorativeElementWithTitleAttribute (en): The following decorative images have a <code>title</code> attribute:
+
+ * CheckNatureOfElementWithNotEmptyAltAttribute (fr): Les images suivantes ont un attribut alt et title vides, v&eacute;rifier qu'il s'agit d'images de d&eacute;coration :
+ * CheckNatureOfElementWithNotEmptyAltAttribute (en): The following images have an empty alt and title attribute, please check they are decorative:
+
+ * CheckNatureOfElementWithEmptyAltAttribute (fr): Les images suivantes ont un attribut alt ou title non vide, v&eacute;rifier qu'il s'agit d'images porteuses d'information :
+ * CheckNatureOfElementWithEmptyAltAttribute (en): The following images have a not empty alt or title attribute , please check they are not decorative:
+
+ * DecorativeElementWithAriaAttribute (fr): Les images de d&eacute;coration suivantes ont une ou plusieurs propri&eacute;t&eacute; <code>ARIA</code> :
+ * DecorativeElementWithAriaAttribute (en): The following decorative images have one or more <code>ARIA</code> properties :
+
 ### Accede Web guidelines
 
-http://www.accede-web.com/notices/html-css-javascript/6-images-icones/6-3-balise-img/
-http://www.accede-web.com/notices/editoriale/4-images/#ancre-01
+ * Rgaa32016-1-2-1-Accedeweb-HTML-6-3
+ * Rgaa32016-1-2-1-Accedeweb-EDIT-4-1
 
 ### Analysis
 
 #### Not Applicable
 
 The page has no `<img>` tag with an `"alt"` attribute (**Set1** is empty)
+
+All the `<img>` of the page not identified as decorative image and have an alternative not empty (All element return false-result in **Test3**, **Test4** OR **Test6**)
 
 #### Failed
 

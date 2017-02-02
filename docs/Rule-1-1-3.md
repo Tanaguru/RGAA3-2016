@@ -57,10 +57,15 @@ For each occurrence of false-result of **Test1**, raise a MessageA
 -    parameter : `"src"` attribute, tag name, snippet
 -    present in source : yes
 
+#### Rules remark
+
+ * AltMissing (en): The <code>alt</code> attribute is missing on the following elements :
+ * AltMissing (fr): L&#39;attribut <code>alt</code> est absent pour les &eacute;l&eacute;ments suivants : 
+
 ### Accede Web guidelines
 
- * http://www.accede-web.com/notices/html-css-javascript/6-images-icones/6-3-balise-img/
- * http://www.accede-web.com/notices/editoriale/4-images/#ancre-02
+ * Rgaa32016-1-1-3-Accedeweb-HTML-6-3
+ * Rgaa32016-1-1-3-Accedeweb-EDIT-4-2
 
 ### Analysis
 

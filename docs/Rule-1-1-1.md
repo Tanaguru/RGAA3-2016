@@ -42,26 +42,33 @@ All the `<img>` tags (css selector : `img`)
 
 ### Process
 
-#### Test1
+#### Tests
+
+##### Test1
 
 For each element of **Set1**, test the presence of the `"alt"` attribute.
 
 For each occurrence of false-result of **Test1**, raise a MessageA
 
+#### Messages
+
 ##### MessageA : Missing Alt attribute
 
 -    code : **AltMissing** 
-- 	 message (fr) : "L'attribut alt est absent pour les éléments suivants : "
-- 	 message (en) : "The alt attribute is missing on the following elements : "
 -    status: Failed
 -    parameter : `"src"` attribute, tag name, snippet
 -    present in source : yes
 
+#### Rules remark
+
+ * AltMissing (en): The <code>alt</code> attribute is missing on the following elements :
+ * AltMissing (fr): L&#39;attribut <code>alt</code> est absent pour les &eacute;l&eacute;ments suivants : 
+
 ### Accede Web guidelines
 
- * http://www.accede-web.com/notices/html-css-javascript/6-images-icones/6-3-balise-img/
- * http://www.accede-web.com/notices/editoriale/4-images/#ancre-01
- * http://www.accede-web.com/notices/editoriale/4-images/#ancre-02
+ * Rgaa32016-1-1-1-Accedeweb-HTML-6-3
+ * Rgaa32016-1-1-1-Accedeweb-EDIT-4-1
+ * Rgaa32016-1-1-1-Accedeweb-EDIT-4-2
 
 ### Analysis
 
