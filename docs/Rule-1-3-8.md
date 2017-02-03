@@ -8,15 +8,15 @@ This test consists in checking for each informative vector image (`<svg>` tag) a
 
 ### Criterion
 
-[1.3](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-1-3)
+[1.3](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-1-3)
 
 ###Test
 
-[1.3.8](http://references.modernisation.gouv.fr/referentiel-technique-0#test-1-3-8)
+[1.3.8](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-1-3-8)
 
 ### Description
 
-Chaque image vectorielle porteuse d'information (balise `svg`) et poss&eacute;dant une alternative v&eacute;rifie-t-elle une de ces conditions (hors <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#cpCrit1-3" title="Cas particuliers pour le crit&egrave;re 1.3">cas particuliers</a>) ? 
+Chaque image vectorielle (balise svg) porteuse d’information, en l’absence d’alternative, v&eacute;rifie-t-elle ces conditions (hors <a href="http://references.modernisation.gouv.fr/rgaa/cas-particuliers.html#cp-1-3" title="Cas particuliers pour le crit&egrave;re 1.3">cas particuliers</a>) ? 
  
  * La balise `svg` poss&egrave;de un `role="img"` 
  * La balise `svg` poss&egrave;de une propri&eacute;t&eacute; `"aria-label"` dont le contenu est pertinent et identique &agrave; l'attribut `title` s'il est pr&eacute;sent 
@@ -152,7 +152,7 @@ For each occurrence of **Set8** and **Set9** that return a true on **Test4**, **
 
 ##### MessageA : `svg` without role `img` attribute or `aria-label` attribute or `desc` child tag
 
--    code : SvgWithoutRoleImage
+-    code : SvgWithoutRoleImageAriaLabelOrDesc
 -    status: Failed
 -    parameter : tag name, Snippet
 -    present in source : yes
@@ -185,9 +185,26 @@ For each occurrence of **Set8** and **Set9** that return a true on **Test4**, **
 -    parameter : `"role"` attribute, `"aria-label"` attribute, `"title"` attribute, `"desc"` child tag, tag name, Snippet
 -    present in source : yes
 
+#### Rules remark
+
+ * SvgWithoutRoleImageAriaLabelOrDesc (fr): L'attribut <code>role</code> avec la valeur <code>img</code>, l'attribut <code>aria-label</code> ou la balise enfant <code>desc</code> manquent sur les images vectorielles suivantes :
+ * SvgWithoutRoleImageAriaLabelOrDesc (en): The <code>role</code> attribute with the "img" value, the aria-label attribute or the desc child tag are missing on the following vectorial images :
+
+ * InformativeSvgWithNotPertinentAlternative (fr): Les images <code>svg</code> porteuses d&#39;information suivantes semblent avoir une alternative non pertinente : 
+ * InformativeSvgWithNotPertinentAlternative (en): The following <code>svg</code> images that convey information seem to have a not pertinent alternative : 
+
+ * CheckNatureOfSvgWithNotPertinentAlternative (fr): Les images <code>svg</code> suivantes semblent avoir une alternative non pertinente. V&eacute;rifier qu&#39;elles sont porteuses d&#39;information 
+ * CheckNatureOfSvgWithNotPertinentAlternative (en): Check the following  <code>svg</code> images that seem to have a not pertinent alternative, convey information :
+
+ * CheckPertinenceOfAlternativeOfInformativeSvg (fr): Veuillez v&eacute;rifier la pertinence de l&#39;alternative des images <code>svg</code> porteuses d&#39;information suivantes : 
+ * CheckPertinenceOfAlternativeOfInformativeSvg (en): Check the pertinence of the alternative of the following <code>svg</code> images that convey information : 
+
+ * CheckNatureOfSvgAndAlternativePertinence (fr): Si les images <code>svg</code> suivantes sont porteuses d&#39;information, veuillez v&eacute;rifier la pertinence de leur alternative :
+ * CheckNatureOfSvgAndAlternativePertinence (en): If the following <code>svg</code> images convey information, check the pertinence of their alternative : 
+
 ### Accede Web guidelines
 
- * http://www.accede-web.com/notices/editoriale/4-images/#ancre-02
+ * Rgaa32016-1-3-8-Accedeweb-EDIT-4-2
 
 ### Analysis
 
