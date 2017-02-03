@@ -79,9 +79,17 @@ For each element of **Set3**, raise a MessageB.
 -    parameter : text, `"src"` attribute, tag name, snippet
 -    present in source : yes
 
+#### Rules remark
+
+ * CheckPresenceOfAlternativeMechanismForInformativeImage (fr): V&eacute;rifier pour images porteuses d'information suivantes s'il existe un m&eacute;chanisme alternatif pour avoir acc&egrave;s à l'information :
+ * CheckPresenceOfAlternativeMechanismForInformativeImage (en): The following images have a not pertinent <code>alt</code> attribute, please check they convey information and the pertinence of the alternative:
+
+ * CheckNatureOfImageAndPresenceOfAlternativeMechanism (fr): Si les images suivantes sont porteuses d&#39;information, v&eacute;rifier la pertinence de leur attribut <code>alt</code> : 
+ * CheckNatureOfImageAndPresenceOfAlternativeMechanism (en): If the following images convey information, please check the pertinence of their <code>alt</code> attribute :
+
 ### Accede Web guidelines
 
- * http://www.accede-web.com/notices/editoriale/4-images/#ancre-02
+ * Rgaa32016-1-3-6-Accedeweb-EDIT-4-2
 
 ### Analysis
 
