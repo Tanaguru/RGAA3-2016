@@ -62,7 +62,9 @@ For each element of **Set2**, raise a MessageA.
 
 #### Test2
 
-For each element of **Set3**, raise a MessageB.
+For each element of **Set3** (decorative `<object>` not identified by a html marker), check the presence of of text between `<object>` tags or one of the `"aria-label"`, `"aria-describedby"` or `"aria-labelledby"` attributes on the tag or least one its children and that the `aria-hidden` attribute is missing. 
+
+For each element returning true in **Test2**, raise a MessageB.
 
 ##### MessageA : Check the presence of an alternative mechanism for information image
 
@@ -78,9 +80,17 @@ For each element of **Set3**, raise a MessageB.
 -    parameter : text, `"data"` attribute, tag name, snippet
 -    present in source : yes
 
+#### Rules remark
+
+ * CheckPresenceOfAlternativeMechanismForInformativeImage (fr): V&eacute;rifier pour images porteuses d'information suivantes s'il existe un m&eacute;chanisme alternatif pour avoir acc&egrave;s à l'information :
+ * CheckPresenceOfAlternativeMechanismForInformativeImage (en): The following images have a not pertinent <code>alt</code> attribute, please check they convey information and the pertinence of the alternative:
+
+ * CheckNatureOfImageAndPresenceOfAlternativeMechanism (fr): Si les images suivantes sont porteuses d&#39;information, v&eacute;rifier la pertinence de leur attribut <code>alt</code> : 
+ * CheckNatureOfImageAndPresenceOfAlternativeMechanism (en): If the following images convey information, please check the pertinence of their <code>alt</code> attribute : 
+
 ### Accede Web guidelines
 
- * http://www.accede-web.com/notices/editoriale/4-images/#ancre-02
+ * Rgaa32016-1-3-4-Accedeweb-EDIT-4-2
 
 ### Analysis
 
