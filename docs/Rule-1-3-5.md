@@ -10,15 +10,15 @@ Human check will be then needed to determine whether an alternative is present a
 
 ### Criterion
 
-[1.3](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-1-3)
+[1.3](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-1-3)
 
 ###Test
 
-[1.3.5](http://references.modernisation.gouv.fr/referentiel-technique-0#test-1-3-5)
+[1.3.5](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-1-3-5)
 
 ### Description
 
-Chaque image objet (balise `object` avec l'attribut `type="image/..."`) porteuse d'information, qui utilise une propri&eacute;t&eacute; aria-lebel, aria-labelledby ou un attribut title, v&eacute;rifie-t-elle une de ces conditions(hors <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#cpCrit1-3" title="Cas particuliers pour le crit&egrave;re 1.3">cas particuliers</a>) ? 
+Chaque image objet (balise `object` avec l'attribut `type="image/..."`) porteuse d'information, qui utilise une propri&eacute;t&eacute; aria-lebel, aria-labelledby ou un attribut title, v&eacute;rifie-t-elle une de ces conditions(hors <a href="http://references.modernisation.gouv.fr/rgaa/cas-particuliers.html#cp-1-3" title="Cas particuliers pour le crit&egrave;re 1.3">cas particuliers</a>) ? 
  
  * S'il est présent, le contenu de l'attribut title est identique au contenu de l'attribut aria-label ; 
  * S'il est présent, le contenu de l'attribut title est identique au passage de texte lié par la propriété aria-labelledby.
@@ -76,6 +76,14 @@ For each occurrence of false-result of **Test2**, raise a MessageB.
 -    status: failed
 -    parameter : text, `"src"` attribute, tag name, snippet
 -    present in source : yes
+
+#### Rules remark
+
+ * CheckNatureOfImageAndPresenceOfAlternativeMechanism (fr): Si les images suivantes sont porteuses d&#39;information, v&eacute;rifier la pertinence de leur attribut <code>alt</code> : 
+ * CheckNatureOfImageAndPresenceOfAlternativeMechanism (en): If the following images convey information, please check the pertinence of their <code>alt</code> attribute : 
+
+ * DetectTitleNotEqualAriaLabelAriaLabelledby (fr): Les images porteuses d&#39;information suivantes ont un attribut <code>title</code> qui n'est pas &eacute;gal à la propri&eacute;t&eacute; Aria :
+ * DetectTitleNotEqualAriaLabelAriaLabelledby (en): The following images that conveys information have a <code>title</code> attribute that is not equal to the Aria property :
 
 ### Analysis
 

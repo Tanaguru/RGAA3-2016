@@ -10,15 +10,15 @@ Human check will be then needed to determine whether an alternative is present a
 
 ### Criterion
 
-[1.3](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-1-3)
+[1.3](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-1-3)
 
 ###Test
 
-[1.3.4](http://references.modernisation.gouv.fr/referentiel-technique-0#test-1-3-4)
+[1.3.4](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-1-3-4)
 
 ### Description
 
-Chaque image objet (balise `object` avec l'attribut `type="image/..."`) porteuse d'information v&eacute;rifie-t-elle une de ces conditions(hors <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#cpCrit1-3" title="Cas particuliers pour le crit&egrave;re 1.3">cas particuliers</a>) ? 
+Chaque image objet (balise `object` avec l'attribut `type="image/..."`) porteuse d'information v&eacute;rifie-t-elle une de ces conditions(hors <a href="http://references.modernisation.gouv.fr/rgaa/cas-particuliers.html#cp-1-3" title="Cas particuliers pour le crit&egrave;re 1.3">cas particuliers</a>) ? 
  
  * L'image objet est imm&eacute;diatement suivie d'un lien adjacent permettant d'afficher une page ou un passage de texte contenant une alternative pertinente. 
  * Un m&eacute;canisme permet &agrave; l'utilisateur de remplacer l'image objet par un texte alternatif pertinent 
