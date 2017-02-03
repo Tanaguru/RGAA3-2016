@@ -52,7 +52,7 @@ All the elements of **Set1** with a `"longdesc"` attribute or identified as info
 
 #### Set3
 
-All the elements of **Set1** identified neither as informative image, nor as decorative image by marker usage (see Notes for details about detection through marker)
+All the elements of **Set1** identified neither as informative image, nor as decorative image by marker usage (see Notes for details about detection through marker) and with a not empty alt attribute.
 
 ### Process
 
@@ -142,10 +142,30 @@ For each occurrence of false-result of **Test6**, raise a MessageF.
 -    parameter : `"alt"` attribute, `"title"` attribute, `"src"` attribute, tag name
 -    present in source : yes
 
+#### Rules remark
+
+ * NotPertinentAlt (fr): Les images porteuses d&#39;information suivantes ont un attribut <code>alt</code> non pertinent :
+ * NotPertinentAlt (en): The following images that conveys information have a not pertinence <code>alt</code> attribute :
+
+ * CheckPertinenceOfAltAttributeOfInformativeImage (fr): V&eacute;rifier la pertinence de l&#39;attribut <code>alt</code> des images porteuses d&#39;information suivantes :
+ * CheckPertinenceOfAltAttributeOfInformativeImage (en): Please check the pertinence of the <code>alt</code> attribute of the following images that conveys information :
+
+ * TitleNotIdenticalToAlt (fr): L&#39;attribut <code>title</code> n&#39;est pas identique \u00e0 l&#39;attribut <code>alt</code> pour les images porteuses d&#39;information suivantes :
+ * TitleNotIdenticalToAlt (en): The <code>title</code> is not identical to the <code>alt</code> attribute on the following images that convey information :
+
+ * CheckNatureOfImageWithNotPertinentAlt (fr): L&#39;attribut <code>alt</code> des images suivantes n&#39;est pas pertinent, v&eacute;rifier qu&#39;il s&#39;agit d&#39;images porteuses d&#39;information et de la pertinence de l'alternative :
+ * CheckNatureOfImageWithNotPertinentAlt (en): The following images have a not pertinent <code>alt</code> attribute, please check they convey information and the pertinence of the alternative:
+
+ * CheckNatureOfImageAndAltPertinence (fr): Si les images suivantes sont porteuses d&#39;information, v&eacute;rifier la pertinence de leur attribut <code>alt</code> : 
+ * CheckNatureOfImageAndAltPertinence (en): If the following images convey information, please check the pertinence of their <code>alt</code> attribute : 
+
+ * TheTextAssociatedWithAriaAttributeIsNotEqualToAltAttribute (fr): Les images suivantes ont une ou plusieurs propriété Aria qui ne sont pas égale à l'attribut <code>alt</code> :
+ * TheTextAssociatedWithAriaAttributeIsNotEqualToAltAttribute (en): The following images have one or more Aria properties that are not identical to the <code>alt</code> attribute:
+
 ### Accede Web guidelines
 
- * http://www.accede-web.com/notices/html-css-javascript/6-images-icones/6-3-balise-img/
- * http://www.accede-web.com/notices/editoriale/4-images/#ancre-02
+ * Rgaa32016-1-3-1-Accedeweb-HTML-6-3
+ * Rgaa32016-1-3-1-Accedeweb-EDIT-4-2
 
 ### Analysis
 
@@ -161,7 +181,7 @@ The alternatives of all the `<img>` tags need to be manually checked (**Test1** 
 
 #### Not Applicable
 
-The page has no `<img>` tag with an `"alt"` attribute (**Set1** is empty)
+The page has no `<img>` tag with an `"alt"` attribute not empty (**Set1** or **Set3** are empty)
 
 ### Markers 
 
