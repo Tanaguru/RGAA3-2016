@@ -10,15 +10,15 @@ Human check will be then needed to determine whether the alternative is well ren
 
 ### Criterion
 
-[1.3](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-1-3)
+[1.3](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-1-3)
 
 ###Test
 
-[1.3.9](http://references.modernisation.gouv.fr/referentiel-technique-0#test-1-3-9)
+[1.3.9](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-1-3-9)
 
 ### Description
 
-Pour chaque image vectorielle porteuse d'information (balise `svg`) et poss&eacute;dant une alternative, cette alternative est-elle <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mRestitutionCorrecte">correctement restitu&eacute;e</a> par les technologies d'assistance ?
+Pour chaque image vectorielle porteuse d'information (balise `svg`) et poss&eacute;dant une alternative, cette alternative est-elle <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#correctement-restitue-par-les-technologies-dassistance">correctement restitu&eacute;e</a> par les technologies d'assistance ?
 
 ### Level
 
@@ -85,6 +85,14 @@ For each element of **Set4** and **Set5**, raise a MessageB.
 -    status: Pre-Qualified
 -    parameter : `"role"` attribute, `"aria-label"` attribute, `"title"` attribute, tag name, snippet
 -    present in source : yes
+
+#### Rules remark
+
+ * CheckAtRestitutionOfAlternativeOfInformativeImage (fr): Veuillez v&eacute;rifier que l&#39;alternative des images porteuses d&#39;information suivantes est correctement restitu&eacute;e par les technologies d&#39;assistance : 
+ * CheckAtRestitutionOfAlternativeOfInformativeImage (en): The following images that convey information have been detected, please check their alternative is correctly rendered by assistive technologies :
+
+ * CheckNatureOfImageAndAtRestitutionOfAlternative (fr): Si les images suivantes sont porteuses d&#39;information, veuillez v&eacute;rifier que leur alternative est correctement restitu&eacute;e par les technologies d&#39;assistance : 
+ * CheckNatureOfImageAndAtRestitutionOfAlternative (en): If the following images convey information, please check their alternative is correctly rendered by assistive technologies :
 
 ### Analysis
 
