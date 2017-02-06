@@ -96,45 +96,45 @@ For each element returning true in **Test6**, raise a MessageD.
 
 ##### MessageA : Decorative image with not empty alternative
 
--    code : DecorativeElementWithNotEmptyAltAttribute
+-    code : DecorativeAreaWithNotEmptyAltAttribute
 -    status: Failed
 -    parameter : `"alt"` attribute, `"title"` attribute, Snippet
 -    present in source : yes
 
 ##### MessageB : Decorative image with a title attribute
 
--    code : DecorativeElementWithTitleAttribute
+-    code : DecorativeAreaWithTitleAttribute
 -    status: Failed
 -    parameter : `"alt"` attribute, `"title"` attribute, Snippet
 -    present in source : yes
 
 ##### MessageD : Check the nature of the image with a empty alternative
 
--    code : CheckNatureOfElementWithEmptyAltAttribute
+-    code : CheckNatureOfAreaWithEmptyAltAttribute
 -    status: Pre-qualified (NMI-Neutral)
 -    parameter : Snippet
 -    present in source : yes
 
 ##### MessageE : Decorative image with an Aria attribute
 
--    code : DecorativeElementWithAriaAttribute
+-    code : DecorativeAreaWithAriaAttribute
 -    status: Failed
 -    parameter : `"alt"` attribute, `"aria-label"` attribute, `"aria-describedby"` attribute, `"aria-labelledby"` attribute, `"src"` attribute, Snippet
 -    present in source : yes
 
 #### Rules remark
 
- * DecorativeElementWithNotEmptyAltAttribute (fr): Les images de d&eacute;coration suivantes ont un attribut <code>alt</code> non vide :
- * DecorativeElementWithNotEmptyAltAttribute (en): The following decorative images have a not empty <code>alt</code> attribute :
+ * DecorativeAreaWithNotEmptyAltAttribute (fr): Les zones non clicables de d&eacute;coration suivantes ont un attribut <code>alt</code> non vide :
+ * DecorativeAreaWithNotEmptyAltAttribute (en): The following decorative non clickable area have a not empty <code>alt</code> attribute :
 
- * DecorativeElementWithTitleAttribute (fr): Les images de d&eacute;coration suivantes ont un attribut <code>title</code> :
- * DecorativeElementWithTitleAttribute (en): The following decorative images have a <code>title</code> attribute:
+ * DecorativeAreaWithTitleAttribute (fr): Les zones non clicables de d&eacute;coration suivantes ont un attribut <code>title</code> :
+ * DecorativeAreaWithTitleAttribute (en): The following decorative non clickable area have a <code>title</code> attribute:
 
- * CheckNatureOfElementWithEmptyAltAttribute (fr): Les images suivantes ont un attribut <code>alt</code> vide et aucun attribut <code>title</code>, v&eacute;rifier que ce sont bien des images de d&eacute;coration :
- * CheckNatureOfElementWithEmptyAltAttribute (en): The following images have an empty alt and no title attribute , please check they are decorative:
+ * CheckNatureOfAreaWithEmptyAltAttribute (fr): Les zones non clicables suivantes ont un attribut <code>alt</code> vide et aucun attribut <code>title</code>, v&eacute;rifier que ce sont bien des zones de d&eacute;coration :
+ * CheckNatureOfAreaWithEmptyAltAttribute (en): The following non clickable area have an empty alt and no title attribute , please check they are decorative:
 
- * DecorativeElementWithAriaAttribute (fr): Les images de d&eacute;coration suivantes ont une ou plusieurs propri&eacute;t&eacute; <code>ARIA</code> :
- * DecorativeElementWithAriaAttribute (en): The following decorative images have one or more <code>ARIA</code> properties:
+ * DecorativeAreaWithAriaAttribute (fr): Les zones non clicables de d&eacute;coration suivantes ont une ou plusieurs propri&eacute;t&eacute; <code>ARIA</code> :
+ * DecorativeAreaWithAriaAttribute (en): The following decorative non clickable area have one or more <code>ARIA</code> properties:
 
 ### Accede Web guidelines
 
