@@ -81,6 +81,15 @@ For each element returning true in **Test4**, raise a MessageA.
 -    parameter : error message, element HTML Code
 -    present in source : yes
 
+#### Rules remark
+
+ * ObsoleteErrorRaisedW3CValidator (fr): Des &eacute;l&eacute;ments obsol&egrave;tes ont &eacute;t&eacute; d&eacute;tect&eacute;s dans la page.
+ * ObsoleteErrorRaisedW3CValidator (en): Obsoletes elements detected in the page.
+
+### Accede Web guidelines
+
+ * Rgaa32016-8-2-2-Accedeweb-HTML-4-1
+
 ### Analysis
 
 #### Failed
