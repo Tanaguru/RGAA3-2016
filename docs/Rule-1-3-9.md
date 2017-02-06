@@ -88,11 +88,11 @@ For each element of **Set4** and **Set5**, raise a MessageB.
 
 #### Rules remark
 
- * CheckAtRestitutionOfAlternativeOfInformativeImage (fr): Veuillez v&eacute;rifier que l&#39;alternative des images porteuses d&#39;information suivantes est correctement restitu&eacute;e par les technologies d&#39;assistance : 
- * CheckAtRestitutionOfAlternativeOfInformativeImage (en): The following images that convey information have been detected, please check their alternative is correctly rendered by assistive technologies :
+ * CheckAtRestitutionOfAlternativeOfInformativeSvgImage (fr): Veuillez v&eacute;rifier que l&#39;alternative des images vectorielles porteuses d&#39;information suivantes est correctement restitu&eacute;e par les technologies d&#39;assistance : 
+ * CheckAtRestitutionOfAlternativeOfInformativeSvgImage (en): The following vector images that convey information have been detected, please check their alternative is correctly rendered by assistive technologies :
 
- * CheckNatureOfImageAndAtRestitutionOfAlternative (fr): Si les images suivantes sont porteuses d&#39;information, veuillez v&eacute;rifier que leur alternative est correctement restitu&eacute;e par les technologies d&#39;assistance : 
- * CheckNatureOfImageAndAtRestitutionOfAlternative (en): If the following images convey information, please check their alternative is correctly rendered by assistive technologies :
+ * CheckNatureOfSvgImageAndAtRestitutionOfAlternative (fr): Si les images vectorielles suivantes sont porteuses d&#39;information, veuillez v&eacute;rifier que leur alternative est correctement restitu&eacute;e par les technologies d&#39;assistance : 
+ * CheckNatureOfSvgImageAndAtRestitutionOfAlternative (en): If the following vector images convey information, please check their alternative is correctly rendered by assistive technologies :
 
 ### Analysis
 
