@@ -101,65 +101,65 @@ For each occurrence of false-result of **Test6**, raise a MessageF.
 
 ##### MessageA 
 
--    code : **NotPertinentAlt** 
+-    code : **NotPertinentAreaAlt** 
 -    status: Failed
 -    parameter : `"alt"` attribute, `"title"` attribute, `"href"` attribute, tag name
 -    present in source : yes
 
 ##### MessageB 
 
--    code : **CheckPertinenceOfAltAttributeOfInformativeImage** 
+-    code : **CheckPertinenceOfAltAttributeOfInformativeArea** 
 -    status: Pre-Qualified (NMI-Passed)
 -    parameter : `"alt"` attribute, `"title"` attribute, `"href"` attribute, tag name
 -    present in source : yes
 
 ##### MessageC
 
--    code : **TitleNotIdenticalToAlt** 
+-    code : **TitleNotIdenticalToAltArea** 
 -    status: Pre-Qualified (NMI-Failed)
 -    parameter : `"alt"` attribute, `"title"` attribute, `"href"` attribute, tag name
 -    present in source : yes
 
 ##### MessageD
 
--    code : **CheckNatureOfImageWithNotPertinentAlt** 
+-    code : **CheckNatureOfAreaWithNotPertinentAlt** 
 -    status: Pre-Qualified (NMI-Failed)
 -    parameter : `"alt"` attribute, `"title"` attribute, `"href"` attribute, tag name
 -    present in source : yes
 
 ##### MessageE
 
--    code : **CheckNatureOfImageAndAltPertinence** 
+-    code : **CheckNatureOfAreaAndAltPertinence** 
 -    status: Pre-Qualified (NMI-Neutral)
 -    parameter : `"alt"` attribute, `"title"` attribute, `"href"` attribute, tag name
 -    present in source : yes
 
 ##### MessageF 
 
--    code : **TheTextAssociatedWithAriaAttributeIsNotEqualToAltAttribute** 
+-    code : **TheTextAssociatedWithAriaAttributeIsNotEqualToAreaAltAttribute** 
 -    status: Failed
 -    parameter : `"alt"` attribute, `"title"` attribute, `"src"` attribute, tag name
 -    present in source : yes
 
 #### Rules remark
 
- * NotPertinentAlt (fr): Les images porteuses d&#39;information suivantes ont un attribut <code>alt</code> non pertinent :
- * NotPertinentAlt (en): The following images that conveys information have a not pertinence <code>alt</code> attribute :
+ * NotPertinentAreaAlt (fr): Les zones porteuses d&#39;information suivantes ont un attribut <code>alt</code> non pertinent :
+ * NotPertinentAreaAlt (en): The following areas that conveys information have a not pertinence <code>alt</code> attribute :
 
- * CheckPertinenceOfAltAttributeOfInformativeImage (fr): V&eacute;rifier la pertinence de l&#39;attribut <code>alt</code> des images porteuses d&#39;information suivantes :
- * CheckPertinenceOfAltAttributeOfInformativeImage (en): Please check the pertinence of the <code>alt</code> attribute of the following images that conveys information :
+ * CheckPertinenceOfAltAttributeOfInformativeArea (fr): V&eacute;rifier la pertinence de l&#39;attribut <code>alt</code> des zones porteuses d&#39;information suivantes :
+ * CheckPertinenceOfAltAttributeOfInformativeArea (en): Please check the pertinence of the <code>alt</code> attribute of the following areas that conveys information :
 
- * TitleNotIdenticalToAlt (fr): L&#39;attribut <code>title</code> n&#39;est pas identique \u00e0 l&#39;attribut <code>alt</code> pour les images porteuses d&#39;information suivantes :
- * TitleNotIdenticalToAlt (en): The <code>title</code> is not identical to the <code>alt</code> attribute on the following images that convey information :
+ * TitleNotIdenticalToAltArea (fr): L&#39;attribut <code>title</code> n&#39;est pas identique \u00e0 l&#39;attribut <code>alt</code> pour les zones porteuses d&#39;information suivantes :
+ * TitleNotIdenticalToAltArea (en): The <code>title</code> is not identical to the <code>alt</code> attribute on the following areas that convey information :
 
- * CheckNatureOfImageWithNotPertinentAlt (fr): L&#39;attribut <code>alt</code> des images suivantes n&#39;est pas pertinent, v&eacute;rifier qu&#39;il s&#39;agit d&#39;images porteuses d&#39;information et de la pertinence de l'alternative :
- * CheckNatureOfImageWithNotPertinentAlt (en): The following images have a not pertinent <code>alt</code> attribute, please check they convey information and the pertinence of the alternative:
+ * CheckNatureOfAreaWithNotPertinentAlt (fr): L&#39;attribut <code>alt</code> des zones suivantes n&#39;est pas pertinent, v&eacute;rifier qu&#39;il s&#39;agit de zones porteuses d&#39;information et de la pertinence de l'alternative :
+ * CheckNatureOfAreaWithNotPertinentAlt (en): The following areas have a not pertinent <code>alt</code> attribute, please check they convey information and the pertinence of the alternative:
 
- * CheckNatureOfImageAndAltPertinence (fr): Si les images suivantes sont porteuses d&#39;information, v&eacute;rifier la pertinence de leur attribut <code>alt</code> : 
- * CheckNatureOfImageAndAltPertinence (en): If the following images convey information, please check the pertinence of their <code>alt</code> attribute : 
+ * CheckNatureOfAreaAndAltPertinence (fr): Si les zones suivantes sont porteuses d&#39;information, v&eacute;rifier la pertinence de leur attribut <code>alt</code> : 
+ * CheckNatureOfAreaAndAltPertinence (en): If the following areas convey information, please check the pertinence of their <code>alt</code> attribute : 
 
- * TheTextAssociatedWithAriaAttributeIsNotEqualToAltAttribute (fr): Les images suivantes ont une ou plusieurs propriété Aria qui ne sont pas égale à l'attribut <code>alt</code> :
- * TheTextAssociatedWithAriaAttributeIsNotEqualToAltAttribute (en): The following images have one or more Aria properties that are not identical to the <code>alt</code> attribute:
+ * TheTextAssociatedWithAriaAttributeIsNotEqualToAreaAltAttribute (fr): Les zones suivantes ont une ou plusieurs propriété Aria qui ne sont pas égale à l'attribut <code>alt</code> :
+ * TheTextAssociatedWithAriaAttributeIsNotEqualToAreaAltAttribute (en): The following areas have one or more Aria properties that are not identical to the <code>alt</code> attribute:
 
 ### Accede Web guidelines
 
