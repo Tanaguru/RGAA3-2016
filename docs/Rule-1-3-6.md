@@ -37,7 +37,7 @@ Chaque image embarqu&eacute;e (balise `embed` avec l'attribut `type="image/..."`
 
 ### Decision level
 
-**Decidable**
+**Semi-Decidable**
 
 ## Algorithm
 
@@ -51,7 +51,7 @@ All the `<embed>` tags of the page not within a link and with a `"type"` attribu
 
 All the elements of **Set2** identified as informative image by marker usage (see Notes for details about detection through marker)
 
-#### Set2
+#### Set3
 
 All the elements of **Set1** identified neither as informative image, nor as decorative image by marker usage (see Notes for details about detection through marker)
 
@@ -63,7 +63,9 @@ For each element of **Set2**, raise a MessageA.
 
 #### Test2
 
-For each element of **Set3**, raise a MessageB.
+For each element of **Set3**, check that the aria-hidden attribute is missing 
+
+For each element return true-result of **Test2**, raise a MessageB.
 
 ##### MessageA : Check the presence of an alternative mechanism for information image
 
@@ -96,6 +98,8 @@ For each element of **Set3**, raise a MessageB.
 #### Not Applicable 
 
 The page has no embedded image (**Set1** is empty)
+
+All elements not indentified as decorative image or informative image and have an alternative (All elements return false-result of **Test2**)
 
 #### Pre-Qualified
 
