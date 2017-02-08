@@ -74,14 +74,14 @@ For each element of **Set4** and **Set5**, raise a MessageB.
 
 ##### MessageA : Check the restitution by assistive technologies of the alternative of informative images
 
--    code : **CheckAtRestitutionOfAlternativeOfInformativeImage** 
+-    code : **CheckAtRestitutionOfAlternativeOfInformativeSvgImage** 
 -    status: Pre-Qualified
 -    parameter : `"role"` attribute, `"aria-label"` attribute, `"title"` attribute, tag name, snippet
 -    present in source : yes
 
 ##### MessageB : Check nature of image and the restitution by assistive technologies of their alternative
 
--    code : **CheckNatureOfImageAndAtRestitutionOfAlternative** 
+-    code : **CheckNatureOfSvgImageAndAtRestitutionOfAlternative** 
 -    status: Pre-Qualified
 -    parameter : `"role"` attribute, `"aria-label"` attribute, `"title"` attribute, tag name, snippet
 -    present in source : yes
