@@ -43,7 +43,7 @@ Chaque image objet (balise `object` avec l'attribut `type="image/..."`) porteuse
 
 ##### Set1
 
-All the `<object>` tags with a `"type"` attribute that starts with "image/...", not within a link and not identified as captcha (see Notes about captcha detection)  (css selector : object[type^=image]:not(a object))
+All the `<object>` tags with a `"type"` attribute that starts with "image/...", not within a link and not identified as captcha (see Notes about captcha detection)  (css selector : object[type^=image]:not(a object)) and the `"role"` attribute is missing.
 
 ### Process
 

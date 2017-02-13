@@ -42,7 +42,7 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#imag
 
 #### Set1
 
-All the `<img>` tags of the page not within a link, without `<longdesc>` attribute and not identified as captcha (see Notes about captcha detection) (css selector : `img:not(a img):not([longdesc])`)
+All the `<img>` tags of the page not within a link, without `<longdesc>` attribute and not identified as captcha (see Notes about captcha detection) (css selector : `img:not(a img):not([longdesc])`) and the `"role"` attribute that value is different than "img" or "presentation" is missing.
 
 #### Set2
 

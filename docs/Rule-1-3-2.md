@@ -43,7 +43,7 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#zone
 
 #### Set1
 
-All the `<area>` tags, defined within a `<map>` tag whose the `"id"` attribute corresponds to the `"usemap"` attribute of an `<img>` tag, with a `"href"` and an `"alt"` attribute 
+All the `<area>` tags, defined within a `<map>` tag whose the `"id"` attribute corresponds to the `"usemap"` attribute of an `<img>` tag, with a `"href"` and an `"alt"` attribute and the `"role"` attribute is missing.
 
 #### Set2
 

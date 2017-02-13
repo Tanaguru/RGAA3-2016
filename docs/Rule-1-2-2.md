@@ -42,7 +42,7 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#zone
 
 #### Set1
 
-All the `<area>` tags, defined within a `<map>` tag whose the `"id"` attribute corresponds to the `"usemap"` attribute of an `<img>` tag, and not identified as captcha (see Notes about captcha detection)
+All the `<area>` tags, defined within a `<map>` tag whose the `"id"` attribute corresponds to the `"usemap"` attribute of an `<img>` tag, and not identified as captcha (see Notes about captcha detection) and the `"role"` attribute that value is different than "img" or "presentation" is missing.
 
 #### Set2
 

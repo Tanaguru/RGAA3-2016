@@ -43,7 +43,7 @@ Chaque image vectorielle de d&eacute;coration (balise `<svg>`) sans l&eacute;gen
 
 #### Set1
 
-All the `<svg>` tags of the page, not within a link not identified as captcha (see Notes about captcha detection) (css selector : `svg:not(a svg)`) 
+All the `<svg>` tags of the page, not within a link not identified as captcha (see Notes about captcha detection) (css selector : `svg:not(a svg)`) and the `"role"` attribute that value is different than "img" or "presentation" is missing.
 
 #### Set2
 

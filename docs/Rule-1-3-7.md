@@ -43,7 +43,7 @@ Chaque image objet (balise `embed` avec l'attribut `type="image/..."`) porteuse 
 
 ##### Set1
 
-All the `<embed>` tags with a `"type"` attribute that starts with "image/...", not within a link and not identified as captcha (see Notes about captcha detection)  (css selector : embed[type^=image]:not(a embed))
+All the `<embed>` tags with a `"type"` attribute that starts with "image/...", not within a link and not identified as captcha (see Notes about captcha detection)  (css selector : embed[type^=image]:not(a embed)) and the `"role"` attribute is missing.
 
 ### Process
 

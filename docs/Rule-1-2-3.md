@@ -42,7 +42,7 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#imag
 
 #### Set1
 
-All the `<object>` tags with a `"type"` attribute equals to "image", not within a link and not identified as captcha (see Notes about captcha detection) (css selector : `object[type^=image]:not(a object)`)
+All the `<object>` tags with a `"type"` attribute equals to "image", not within a link and not identified as captcha (see Notes about captcha detection) (css selector : `object[type^=image]:not(a object)`) and the `"role"` attribute that value is different than "img" or "presentation" is missing.
 
 #### Set2
 

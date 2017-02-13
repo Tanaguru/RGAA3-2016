@@ -41,7 +41,7 @@ Chaque image embarquée (balise `embed` avec l'attribut `type="image/..."`) <a h
 
 #### Set1
 
-All the `<embed>` tags with a `"type"` attribute equals to "image", not within a link and not identified as captcha (see Notes about captcha detection) (css selector : `embed[type^=image]:not(a embed)`)
+All the `<embed>` tags with a `"type"` attribute equals to "image", not within a link and not identified as captcha (see Notes about captcha detection) (css selector : `embed[type^=image]:not(a embed)`) and the `"role"` attribute that value is different than "img" or "presentation" is missing.
 
 #### Set2
 

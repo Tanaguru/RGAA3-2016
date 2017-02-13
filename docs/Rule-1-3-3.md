@@ -43,7 +43,7 @@ Pour chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html
 
 #### Set1
 
-All the `<input>` tags with a `"type"` attribute equals to "image" and an `"alt"` attribute (css selector : `input[type=image][alt]`)
+All the `<input>` tags with a `"type"` attribute equals to "image" and an `"alt"` attribute (css selector : `input[type=image][alt]`) and the `"role"` attribute is missing.
 
 ### Process
 

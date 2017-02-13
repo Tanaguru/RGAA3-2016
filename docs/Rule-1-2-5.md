@@ -42,7 +42,7 @@ Pour chaque image bitmap de d&eacute;coration (balise `canvas`) sans l&eacute;ge
 
 #### Set1
 
-All the `<canvas>` tags of the page not within a link and not identified as captcha (see Notes about captcha detection) (css selector : `canvas:not(a canvas)`)
+All the `<canvas>` tags of the page not within a link and not identified as captcha (see Notes about captcha detection) (css selector : `canvas:not(a canvas)`) and the `"role"` attribute that value is different than "img" or "presentation" is missing.
 
 #### Set2
 
