@@ -58,6 +58,12 @@ For each element return false-result, raise the MessageA.
 
 if **Set2** is null, for each element of **Set1**, produce a MessageA
 
+##### Test3
+
+For each element of **Set1**, test the presence of a `"role"` attribute.
+
+For each occurrence of true-result of **Test2**, raise a MessageB
+
 #### Messages
 
 ##### MessageA : Check a link is associated with the server-sided image map
@@ -68,10 +74,20 @@ if **Set2** is null, for each element of **Set1**, produce a MessageA
 -    parameter : `"alt"` attribute, `"src"` attribute, `"url"` of the ismap.map file, tag name
 -    present in source : yes
 
+##### MessageB : Check manually that use Aria role is relevant
+
+-    code : **CheckManuallyThatUseAriaRoleRelevant** 
+-    status: Pre-qualified (NMI-Neutral)
+-    parameter : `"src"` attribute, tag name, snippet
+-    present in source : yes
+
 #### Rules remark
 
  * CheckALinkIsAssociatedWithTheServerSidedImageMap (en): Please check a link is associated with the following server-sided map images : 
  * CheckALinkIsAssociatedWithTheServerSidedImageMap (fr): V&eacute;rifier qu'un lien est associ&eacute; avec les images r&eacute;actives cot&eacute; serveur suivantes :  
+
+ * CheckManuallyThatUseAriaRoleRelevant (en): Check manually that use Aria role on these elements is relevant:
+ * CheckManuallyThatUseAriaRoleRelevant (fr): V&eacute;rifier manuellement qu'utiliser un role Aria sur ces &eacute;l&eacute;ments est pertinent :
 
 ### Analysis
 
