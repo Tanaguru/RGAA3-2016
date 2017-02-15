@@ -16,7 +16,7 @@ This test consists in checking whether the context of each text link is enough e
 
 ### Description
 
-Chaque <a href=http://references.modernisation.gouv.fr/referentiel-technique-0#lien-texte">lien texte</a> v&eacute;rifie-t-il une de ces conditions (<a href="http://references.modernisation.gouv.fr/referentiel-technique-0#critres-61-et-63" title="Cas particuliers pour le crit&egrave;re 6.1">hors cas particuliers</a>) ? 
+Chaque <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#lien-texte">lien texte</a> v&eacute;rifie-t-il une de ces conditions (<a href="http://references.modernisation.gouv.fr/referentiel-technique-0#critres-61-et-63" title="Cas particuliers pour le crit&egrave;re 6.1">hors cas particuliers</a>) ? 
  
  * L'<a href="http://references.modernisation.gouv.fr/referentiel-technique-0#intitul-de-lien">intitul&eacute; de lien</a> seul permet d'en comprendre la fonction et la destination 
  * Le <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#contexte-du-lien">contexte du lien</a> permet d'en comprendre la fonction et la destination 
