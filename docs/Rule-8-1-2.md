@@ -9,15 +9,15 @@ declarations](http://www.w3.org/QA/2002/04/valid-dtd-list.html))
 
 ### Criterion
 
-[8.1](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-8-1)
+[8.1](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-8-1)
 
 ### Test
 
-[8.1.2](http://references.modernisation.gouv.fr/referentiel-technique-0#test-8-1-2)
+[8.1.2](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-8-1-2)
 
 ### Description
 
-Pour chaque page Web, le <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#type-de-document">type de document</a> (balise `doctype`) est-il valide ?
+Pour chaque page Web, le <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#type-de-document">type de document</a> (balise `doctype`) est-il valide ?
 
 ### Level
 
