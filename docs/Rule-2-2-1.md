@@ -8,15 +8,15 @@ This test consists in checking the relevancy of the `"title"` attribute for each
 
 ### Criterion
 
-[2.2](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-2-2)
+[2.2](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-2-2)
 
 ### Test
 
-[2.2.1](http://references.modernisation.gouv.fr/referentiel-technique-0#test-2-2-1)
+[2.2.1](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-2-2-1)
 
 ### Description
 
-Pour chaque <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mCadreEnLigne">cadre en ligne</a> (balise `iframe`) ayant un attribut `title`, le contenu de cet attribut est-il pertinent ?
+Pour chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#cadre-en-ligne">cadre en ligne</a> (balise `iframe`) ayant un attribut `title`, le contenu de cet attribut est-il pertinent ?
 
 ### Level
 
@@ -63,6 +63,18 @@ For each occurrence of false-result of **Test1**, raise a MessageB
 -   status: Pre-Qualified
 -   parameter : `"title"` attribute, tag name, snippet
 -   present in source : yes
+
+#### Rules remark
+
+ * NotPertinentTitleOfFrame (fr): L&#39;attribut <code>title</code> des balises <code>iframe</code> suivantes n&#39;est pas pertinent : 
+ * NotPertinentTitleOfFrame (en): The <code>title</code> attribute of the following <code>frame</code> tags is not pertinent : 
+
+ * CheckTitleOfFramePertinence (fr): V&eacute;rifier la pertinence de l&#39;attribut <code>title</code> des balises <code>frame</code> suivantes :
+ * CheckTitleOfFramePertinence (en): Please check the pertinence of the <code>title</code> attribute of the following <code>frame</code> tags :
+
+### Accede Web guidelines
+
+ * Rgaa32016-2-2-1-Accedeweb-HTML-13
 
 ### Analysis
 
