@@ -8,11 +8,11 @@ This test consists in checking the presence of the `"title"` attribute for all t
 
 ### Criterion
 
-[2.1](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-2-1)
+[2.1](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-2-1)
 
 ### Test
 
-[2.1.1](http://references.modernisation.gouv.fr/referentiel-technique-0#test-2-1-1)
+[2.1.1](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-2-1-1)
 
 ### Description
 
@@ -54,6 +54,15 @@ For each occurrence of false-result of **Test1**, raise a MessageA
 -   status: Failed
 -   parameter : `"src"` attribute, tag name, snippet
 -   present in source : yes
+
+#### Rules remark
+
+ * TitleAttributeMissing (fr): L&#39;attribut <code>title</code> est absent pour les &eacute;l&eacute;ments suivants : 
+ * TitleAttributeMissing (en): The <code>title</code> attribute is missing on the following elements : 
+
+### Accede Web guidelines
+
+ * Rgaa32016-2-1-1-Accedeweb-HTML-13
 
 ### Analysis
 

@@ -2,17 +2,15 @@
 
 ## Summary
 
-No-check rule
-
 ## Business description
 
 ### Criterion
 
-[4.1](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-4-1)
+[4.1](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-4-1)
 
 ###Test
 
-[4.1.1](http://references.modernisation.gouv.fr/referentiel-technique-0#test-4-1-1)
+[4.1.1](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-4-1-1)
 
 ### Description
 
