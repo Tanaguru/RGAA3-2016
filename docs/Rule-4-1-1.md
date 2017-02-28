@@ -14,11 +14,10 @@
 
 ### Description
 
-Chaque <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mMediaTemp">m&eacute;dia temporel</a> pr&eacute;-enregistr&eacute; seulement audio, v&eacute;rifie-t-il, si n&eacute;cessaire, l'une de ces conditions (<a href="http://references.modernisation.gouv.fr/referentiel-technique-0#cpCrit4-" title="Cas particuliers pour le crit&egrave;re 4.1">hors cas particuliers</a>) ? 
+Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#mdia-temporel-type-son-vido-et-synchronis">m&eacute;dia temporel</a> pr&eacute;-enregistr&eacute; seulement audio, v&eacute;rifie-t-il, si n&eacute;cessaire, l'une de ces conditions (<a href="http://references.modernisation.gouv.fr/rgaa/cas-particuliers.html#cp-4-1" title="Cas particuliers pour le crit&egrave;re 4.1">hors cas particuliers</a>) ? 
  
- *  Il existe une <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mTranscriptTextuel">transcription textuelle</a> accessible via un <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mLienAdj">lien adjacent</a> (une `url` ou une `ancre`) 
- *  Il existe une <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mTranscriptTextuel">transcription textuelle</a> adjacente clairement identifiable 
-
+ *  Il existe une <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#transcription-textuelle-media-temporel">transcription textuelle</a> accessible via un <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#lien-adjacent">lien adjacent</a> (une `url` ou une `ancre`) 
+ *  Il existe une transcription textuelle adjacente clairement identifiable 
 
 ### Level
 
@@ -38,10 +37,43 @@ Chaque <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#
 
 ### Selection
 
+#### Set1
+
+All the elements `<audio>` tags (css selector : `audio`);
+
 ### Process
+
+#### Tests
+
+##### Test1
+
+If **Set1** is empty, raise a MessageA
+
+If **Set1** is not empty, raise a MessageB
+
+#### Messages
+
+##### MessageA : We detected audio element, check manually the presence of a text transcription
+
+-    code : **WeDetectedAudioElementCheckManuallyThePresenceOfTextTranscription** 
+-    status: Pre-qualified (NMI-Neutral)
+-    parameter : tag name, snippet
+-    present in source : yes
+
+##### MessageB : No audio element detected, check manually the presence of other audio element and its text transcription
+
+-    code : **NoAudioElementDetectedCheckManuallyThePresenceOfOtherAudioElementAndItsTextTranscription** 
+-    status: Pre-qualified (NMI-Neutral)
+-    parameter : tag name, snippet
+-    present in source : yes
+
+### Accede Web guidelines
+
+ * Rgaa32016-4-1-1-Accedeweb-HTML-13
+ * Rgaa32016-4-1-1-Accedeweb-EDIT-8-3
 
 ### Analysis
 
-#### No Tested 
+#### Pre-qualified
 
 In all cases
