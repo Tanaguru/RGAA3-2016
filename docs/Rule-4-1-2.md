@@ -56,27 +56,27 @@ If **Set1** is not empty, raise a MessageB
 
 #### Messages
 
-##### MessageA : We detected video element, check manually the presence of a text transcription
+##### MessageA : We detected video element, check manually the presence of an alternative
 
--    code : **WeDetectedVideoElementCheckManuallyThePresenceOfTextTranscription** 
+-    code : **WeDetectedVideoElementCheckManuallyThePresenceOfAlternative** 
 -    status: Pre-qualified (NMI-Neutral)
 -    parameter : tag name, snippet
 -    present in source : yes
 
-##### MessageB : No video element detected, check manually the presence of other video element and its text transcription
+##### MessageB : No video element detected, check manually the presence of other video element and its alternative
 
--    code : **NoVideoElementDetectedCheckManuallyThePresenceOfOtherVideoElementAndItsTextTranscription** 
+-    code : **NoVideoElementDetectedCheckManuallyThePresenceOfOtherVideoElementAndItsAlternative** 
 -    status: Pre-qualified (NMI-Neutral)
 -    parameter : tag name, snippet
 -    present in source : yes
 
 #### Rules remark
 
- * WeDetectedVideoElementCheckManuallyThePresenceOfTextTranscription (fr): Nous d&eacute;tectons des &eacute;l&eacute;ments vid&eacute;o, v&eacute;rifier manuellement la pr&eacute;sence d'une transcription textuelle
- * WeDetectedVideoElementCheckManuallyThePresenceOfTextTranscription (en): We detected video element, check manually the presence of a text transcription
+ * WeDetectedVideoElementCheckManuallyThePresenceOfAlternative (fr): Nous d&eacute;tectons des &eacute;l&eacute;ments vid&eacute;o, v&eacute;rifier manuellement la pr&eacute;sence d'une alternative
+ * WeDetectedVideoElementCheckManuallyThePresenceOfAlternative (en): We detected video element, check manually the presence of an alternative
 
- * NoVideoElementDetectedCheckManuallyThePresenceOfOtherVideoElementAndItsTextTranscription (fr): Aucun &eacute;l&eacute;ment vid&eacute;o d&eacute;tect&eacute;, v&eacute;rifier manuellement la pr&eacute;sence d'autre &eacute;l&eacute;ments vid&eacute;o et de leur transcription textuelle
- * NoVideoElementDetectedCheckManuallyThePresenceOfOtherVideoElementAndItsTextTranscription (en): No video element detected, check manually the presence of other video element and its text transcription
+ * NoVideoElementDetectedCheckManuallyThePresenceOfOtherVideoElementAndItsAlternative (fr): Aucun &eacute;l&eacute;ment vid&eacute;o d&eacute;tect&eacute;, v&eacute;rifier manuellement la pr&eacute;sence d'autre &eacute;l&eacute;ments vid&eacute;o et de leur transcription textuelle
+ * NoVideoElementDetectedCheckManuallyThePresenceOfOtherVideoElementAndItsAlternative (en): No video element detected, check manually the presence of other video element and its alternative
 
 ### Accede Web guidelines
 
