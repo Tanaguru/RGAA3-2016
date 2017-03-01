@@ -14,7 +14,7 @@
 
 ### Description
 
-Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#mdia-temporel-type-son-vido-et-synchronis">m&eacute;dia temporel</a> pr&eacute;-enregistr&eacute; seulement audio, v&eacute;rifie-t-il, si n&eacute;cessaire, l'une de ces conditions (<a href="http://references.modernisation.gouv.fr/rgaa/cas-particuliers.html#cp-4-1" title="Cas particuliers pour le crit&egrave;re 4.1">hors cas particuliers</a>) ? 
+Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#mdia-temporel-type-son-vido-et-synchronis">m&eacute;dia temporel</a> pr&eacute;-enregistr&eacute; seulement audio, v&eacute;rifie-t-il, si n&eacute;cessaire, l'une de ces conditions (<a href="http://references.modernisation.gouv.fr/rgaa/cas-particuliers.html#cp-4-1,4-2,4-3,4-5,4-7,4-9,4-11,4-13" title="Cas particuliers pour le crit&egrave;re 4.1">hors cas particuliers</a>) ? 
  
  *  Il existe une <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#transcription-textuelle-media-temporel">transcription textuelle</a> accessible via un <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#lien-adjacent">lien adjacent</a> (une `url` ou une `ancre`) 
  *  Il existe une transcription textuelle adjacente clairement identifiable 
@@ -66,6 +66,14 @@ If **Set1** is not empty, raise a MessageB
 -    status: Pre-qualified (NMI-Neutral)
 -    parameter : tag name, snippet
 -    present in source : yes
+
+#### Rules remark
+
+ * WeDetectedAudioElementCheckManuallyThePresenceOfTextTranscription (fr): Nous d&eacute;tectons des &eacute;l&eacute;ments audio, v&eacute;rifier manuellement la pr&eacute;sence d'une transcription textuelle
+ * WeDetectedAudioElementCheckManuallyThePresenceOfTextTranscription (en): We detected audio element, check manually the presence of a text transcription
+
+ * NoAudioElementDetectedCheckManuallyThePresenceOfOtherAudioElementAndItsTextTranscription (fr): Aucun &eacute;l&eacute;ment audio d&eacute;tect&eacute;, v&eacute;rifier manuellement la pr&eacute;sence d'autre &eacute;l&eacute;ments audio et de leur transcription textuelle
+ * NoAudioElementDetectedCheckManuallyThePresenceOfOtherAudioElementAndItsTextTranscription (en): No audio element detected, check manually the presence of other audio element and its text transcription
 
 ### Accede Web guidelines
 
