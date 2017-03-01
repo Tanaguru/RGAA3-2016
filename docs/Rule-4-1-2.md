@@ -40,10 +40,52 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#mdia
 
 ### Selection
 
+#### Set1
+
+All the elements `<video>` tags (css selector : `video`);
+
 ### Process
+
+#### Tests
+
+##### Test1
+
+If **Set1** is empty, raise a MessageA
+
+If **Set1** is not empty, raise a MessageB
+
+#### Messages
+
+##### MessageA : We detected video element, check manually the presence of a text transcription
+
+-    code : **WeDetectedVideoElementCheckManuallyThePresenceOfTextTranscription** 
+-    status: Pre-qualified (NMI-Neutral)
+-    parameter : tag name, snippet
+-    present in source : yes
+
+##### MessageB : No video element detected, check manually the presence of other video element and its text transcription
+
+-    code : **NoVideoElementDetectedCheckManuallyThePresenceOfOtherVideoElementAndItsTextTranscription** 
+-    status: Pre-qualified (NMI-Neutral)
+-    parameter : tag name, snippet
+-    present in source : yes
+
+#### Rules remark
+
+ * WeDetectedVideoElementCheckManuallyThePresenceOfTextTranscription (fr): Nous d&eacute;tectons des &eacute;l&eacute;ments vid&eacute;o, v&eacute;rifier manuellement la pr&eacute;sence d'une transcription textuelle
+ * WeDetectedVideoElementCheckManuallyThePresenceOfTextTranscription (en): We detected video element, check manually the presence of a text transcription
+
+ * NoVideoElementDetectedCheckManuallyThePresenceOfOtherVideoElementAndItsTextTranscription (fr): Aucun &eacute;l&eacute;ment vid&eacute;o d&eacute;tect&eacute;, v&eacute;rifier manuellement la pr&eacute;sence d'autre &eacute;l&eacute;ments vid&eacute;o et de leur transcription textuelle
+ * NoVideoElementDetectedCheckManuallyThePresenceOfOtherVideoElementAndItsTextTranscription (en): No video element detected, check manually the presence of other video element and its text transcription
+
+### Accede Web guidelines
+
+ * Rgaa32016-4-1-2-Accedeweb-HTML-13
+ * Rgaa32016-4-1-2-Accedeweb-EDIT-8-3
 
 ### Analysis
 
-#### No Tested 
+#### Pre-qualified
 
 In all cases
+
