@@ -32,7 +32,7 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#mdia
 
 ### Decision level
 
-**Semi-Decidable**
+**Decidable**
 
 ## Algorithm
 
@@ -50,20 +50,33 @@ All the elements `<video>` tags (css selector : `video`);
 
 If **Set1** is empty, raise a MessageA
 
-If **Set1** is not empty, raise a MessageB
+##### Test2
+
+For each element of **Set1**, check the presence of a `<track>` tag child of the element
+
+For each element return true-result of **Test2**, raise a MessageB
+
+For each element return false-result of **Test2**, raise a MessageC
 
 #### Messages
 
-##### MessageA : We detected video element, check manually that possible to show synchronized captions
+##### MessageA : No video element detected, check manually the presence of video element and that possible to show synchronized captions
 
--    code : **WeDetectedVideoElementCheckManuallyThatPossibleToShowSynchronizedCaptions** 
+-    code : **NoVideoElementDetectedCheckManuallyThePresenceOfOtherVideoElementAndThatPossibleToShowSynchronizedCaptions** 
 -    status: Pre-qualified (NMI-Neutral)
 -    parameter : tag name, snippet
 -    present in source : yes
 
-##### MessageB : No video element detected, check manually the presence of video element and that possible to show synchronized captions
+##### MessageB : We detected video element with synchronized captions
 
--    code : **NoVideoElementDetectedCheckManuallyThePresenceOfOtherVideoElementAndThatPossibleToShowSynchronizedCaptions** 
+-    code : **WeDetectedVideoElementWithSynchronizedCaptions** 
+-    status: Passed
+-    parameter : tag name, snippet
+-    present in source : yes
+
+##### MessageC : We detected video element, check manually that possible to show synchronized captions
+
+-    code : **WeDetectedVideoElementCheckManuallyThatPossibleToShowSynchronizedCaptions** 
 -    status: Pre-qualified (NMI-Neutral)
 -    parameter : tag name, snippet
 -    present in source : yes
@@ -76,12 +89,19 @@ If **Set1** is not empty, raise a MessageB
  * NoVideoElementDetectedCheckManuallyThePresenceOfOtherVideoElementAndThatPossibleToShowSynchronizedCaptions (fr): Aucun &eacute;l&eacute;ment vid&eacute;o d&eacute;tect&eacute;, v&eacute;rifier manuellement la pr&eacute;sence &eacute;l&eacute;ments vid&eacute;o et qu'il est possible d'afficher les sous-titres
  * NoVideoElementDetectedCheckManuallyThePresenceOfOtherVideoElementAndThatPossibleToShowSynchronizedCaptions (en): No video element detected, check manually the presence of video element and that possible to show synchronized captions
 
+ * WeDetectedVideoElementWithSynchronizedCaptions (fr): Nous d&eacute;tectons des &eacute;l&eacute;ments vid&eacute;o avec des sous-titres
+ * WeDetectedVideoElementWithSynchronizedCaptions (en): We detected video element, check manually that possible to show synchronized captions
+
 ### Accede Web guidelines
 
  * Rgaa32016-4-3-1-Accedeweb-HTML-13
  * Rgaa32016-4-3-1-Accedeweb-EDIT-8-3
 
 ### Analysis
+
+#### Passed
+
+All the video element have synchronized captions (All the element of the **Test2** return true-result)
 
 #### Pre-qualified
 

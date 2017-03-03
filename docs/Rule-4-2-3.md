@@ -52,7 +52,7 @@ If **Set1** is empty, raise a MessageA
 
 ##### Test2
 
-If **Set1** is not empty, check the presence in the content of page a mention or a link that like following expression:
+For each element of **Set1**, check the presence in the content of page a mention or a link that like following expression:
  - text transcription
  - transcription 
  - transcription textuelle
@@ -63,13 +63,13 @@ For each element return true-result of **Test2**, raise a MessageB
 
 ##### Test3
 
-If **Set1** is not empty, check the presence of an `<audio>`, a `<button>`, a `<div role="button">` tag with an id or a class like following expression:
+For each element of **Set1**, check the presence of an `<audio>`, a `<button>`, a `<div role="button">` tag with an id or a class like following expression:
  - audiodescription
  - ad
  - audio-description
  - audio_description
 
-, raise a MessageA instead
+For each element return true-result of **Test3**, raise a MessageA instead
 
 #### Messages
 

@@ -48,7 +48,7 @@ If **Set1** is empty, raise a MessageA
 
 ##### Test2
 
-If **Set1** is not empty, check the presence in the content of page a mention or a link that like following expression:
+For each element of **Set1**, check the presence in the content of page a mention or a link that like following expression:
  - text transcription
  - transcription 
  - transcription textuelle
