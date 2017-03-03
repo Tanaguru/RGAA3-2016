@@ -32,7 +32,7 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#mdia
 
 ### Decision level
 
-**Decidable**
+**Semi-Decidable**
 
 ## Algorithm
 
@@ -70,7 +70,7 @@ For each element return false-result of **Test2**, raise a MessageC
 ##### MessageB : We detected video element with synchronized captions
 
 -    code : **WeDetectedVideoElementWithSynchronizedCaptions** 
--    status: Passed
+-    status: Pre-qualified (NMI-Passed)
 -    parameter : tag name, snippet
 -    present in source : yes
 
@@ -94,14 +94,9 @@ For each element return false-result of **Test2**, raise a MessageC
 
 ### Accede Web guidelines
 
- * Rgaa32016-4-3-1-Accedeweb-HTML-13
  * Rgaa32016-4-3-1-Accedeweb-EDIT-8-3
 
 ### Analysis
-
-#### Passed
-
-All the video element have synchronized captions (All the element of the **Test2** return true-result)
 
 #### Pre-qualified
 
