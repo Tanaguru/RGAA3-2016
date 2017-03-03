@@ -61,7 +61,17 @@ If **Set1** is not empty, check the presence in the content of page a mention or
  - video text
  - Texte de la vidéo
 
-For each element return true-result of **Test2**, raise a MessageB, raise a MessageA instead
+For each element return true-result of **Test2**, raise a MessageB
+
+##### Test3
+
+If **Set1** is not empty, check the presence of an `<audio>`, a `<button>`, a `<div role="button">` tag with an id or a class like following expression:
+ - audiodescription
+ - ad
+ - audio-description
+ - audio_description
+
+, raise a MessageA instead
 
 #### Messages
 
