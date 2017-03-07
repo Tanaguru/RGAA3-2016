@@ -2,8 +2,6 @@
 
 ## Summary
 
-No-check rule
-
 ## Business description
 
 ### Criterion
@@ -21,7 +19,6 @@ Chaque <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#
  *  Les <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#soustitres-synchroniss-objet-multimdia">sous-titres synchronis&eacute;s</a> sont pertinents 
  *  Les <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#soustitres-synchroniss-objet-multimdia">sous-titres synchronis&eacute;s</a> de la version alternative sont pertinents 
  *  La <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#transcription-textuelle-media-temporel">transcription textuelle</a> est pertinente 
-
 
 ### Level
 
@@ -59,7 +56,7 @@ If **Set1** is empty, raise a MessageB
 
 ##### MessageA : We detected audio element with synchronized captions, check that are relevant
 
--    code : **WeDetectedVideoElementWithSynchronizedCaptionsCheckThatRelevant** 
+-    code : **WeDetectedAudioElementWithSynchronizedCaptionsCheckThatRelevant** 
 -    status: Pre-Qualified (NMI-Neutral)
 -    parameter : tag name, snippet
 -    present in source : yes
@@ -72,8 +69,8 @@ If **Set1** is empty, raise a MessageB
 
 #### Rules remark
 
- * TrackTagWithoutKindAttribute (fr): Balise Track sans attribut kind d&eacute;tect&eacute;e
- * TrackTagWithoutKindAttribute (en): Track tag without kind attribute detected
+ * WeDetectedAudioElementWithSynchronizedCaptionsCheckThatRelevant (fr): Nous d&eacute;tectons un &eacute;l&eacute;ment audio avec sous-titres synchronis&eacute;s, v&eacute;rifier qu'ils sont pertinent
+ * WeDetectedAudioElementWithSynchronizedCaptionsCheckThatRelevant (en): We detected audio element with synchronized captions, check that are relevant
 
  * ManualCheckOnPage (fr): Veuillez v&eacute;rifier manuellement dans la page :
  * ManualCheckOnPage (en): Please manual check on the page:
