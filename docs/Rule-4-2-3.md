@@ -69,7 +69,7 @@ For each element of **Set1**, check the presence of an `<audio>`, a `<button>`, 
  - audio-description
  - audio_description
 
-For each element return true-result of **Test3**, raise a MessageA instead
+For each element return true-result of **Test3**, raise a MessageA
 
 #### Messages
 
