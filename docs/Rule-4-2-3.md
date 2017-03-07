@@ -69,7 +69,9 @@ For each element of **Set1**, check the presence of an `<audio>`, a `<button>`, 
  - audio-description
  - audio_description
 
-For each element return true-result of **Test3**, raise a MessageA
+For each element return true-result of **Test3**, raise a MessageC
+
+For each element return false-result of **Test2** and **Test3**, raise a MessageA
 
 #### Messages
 
@@ -87,6 +89,13 @@ For each element return true-result of **Test3**, raise a MessageA
 -    parameter : tag name, snippet, text
 -    present in source : yes
 
+##### MessageC : We detected video element, check manually, if presente, if the audio description is relevant
+
+-    code : **WeDetectedVideoElementCheckManuallyIfPresentIfAudioDescriptionRelevant** 
+-    status: Pre-qualified (NMI-Neutral)
+-    parameter : tag name, snippet, text
+-    present in source : yes
+
 #### Rules remark
 
  * NoVideoElementDetectedCheckManuallyThePresenceOfVideoElementAndCheckIfItsTextTranscriptionRelevant (fr): Aucun &eacute;l&eacute;ment vid&eacute;o avec transcription textuelle d&eacute;tect&eacute;, v&eacute;rifier manuellement la pr&eacute;sence d'&eacute;l&eacute;ments vid&eacute;o et v&eacute;rifier si leur transcription textuelle sont pertinente
@@ -94,6 +103,9 @@ For each element return true-result of **Test3**, raise a MessageA
 
  * WeDetectedVideoElementCheckManuallyIfPresentIfTextTranscriptionRelevant (fr): Nous d&eacute;tectons des &eacute;l&eacute;ments vid&eacute;o, v&eacute;rifier manuellement, si pr&eacute;sente, si la transcription textuelle est pertinente
  * WeDetectedVideoElementCheckManuallyIfPresentIfTextTranscriptionRelevant (en): We detected video element, check manually, if presente, if the text transcription is relevant
+
+ * WeDetectedVideoElementCheckManuallyIfPresentIfAudioDescriptionRelevant (fr): Nous d&eacute;tectons des &eacute;l&eacute;ments vid&eacute;o, v&eacute;rifier manuellement, si pr&eacute;sente, si l'audio description est pertinente
+ * WeDetectedVideoElementCheckManuallyIfPresentIfAudioDescriptionRelevant (en): We detected video element, check manually, if presente, if the audio description is relevant
 
 ### Accede Web guidelines
 
