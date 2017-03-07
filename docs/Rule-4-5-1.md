@@ -73,9 +73,9 @@ For each element return false-result of **Test2** and **Test3**, raise a Message
 
 #### Messages
 
-##### MessageA : No audio element detected, check manually the presence of an audio element and check whether it has an alternative
+##### MessageA : Check manually the presence of an audio element and check whether it has an alternative
 
--    code : **NoAudioElementDetectedCheckManuallyThePresenceOfAudioElementAndCheckWhetherItHasAnAlternative** 
+-    code : **CheckManuallyThePresenceOfAudioElementAndCheckWhetherItHasAnAlternative** 
 -    status: Pre-qualified (NMI-Neutral)
 -    parameter : tag name, snippet
 -    present in source : yes
@@ -96,8 +96,8 @@ For each element return false-result of **Test2** and **Test3**, raise a Message
 
 #### Rules remark
 
- * NoAudioElementDetectedCheckManuallyThePresenceOfAudioElementAndCheckWhetherItHasAnAlternative (fr): Aucun &eacute;l&eacute;ment audio d&eacute;tect&eacute;, v&eacute;rifier manuellement la pr&eacute;sence d'&eacute;l&eacute;ments audio et v&eacute;rifier qu'elle a une alternative
- * NoAudioElementDetectedCheckManuallyThePresenceOfAudioElementAndCheckWhetherItHasAnAlternative (en): No audio element detected, check manually the presence of an audio element and check whether it has an alternative
+ * CheckManuallyThePresenceOfAudioElementAndCheckWhetherItHasAnAlternative (fr): V&eacute;rifier manuellement la pr&eacute;sence d'&eacute;l&eacute;ments audio et v&eacute;rifier qu'elle a une alternative
+ * CheckManuallyThePresenceOfAudioElementAndCheckWhetherItHasAnAlternative (en): Check manually the presence of an audio element and check whether it has an alternative
 
  * WeDetectedAudioElementWhichAppearsToBeAccompaniedByTextualTranscriptionCheckManually (fr): Nous d&eacute;tectons des &eacute;l&eacute;ments audio qui semble &ecirc;tre accompagn&eacute; d'une transcription textuelle, v&eacute;rifier manuellement
  * WeDetectedAudioElementWhichAppearsToBeAccompaniedByTextualTranscriptionCheckManually (en): We detected audio element which appears to be accompanied by a textual transcription, check manually
