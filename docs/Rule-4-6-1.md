@@ -14,7 +14,7 @@
 
 ### Description
 
-Chaque <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mMediaTemp">m&eacute;dia temporel</a> seulement audio en direct v&eacute;rifie-t-il une de ces conditions ? 
+Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#mdia-temporel-type-son-vido-et-synchronis">m&eacute;dia temporel</a> seulement audio en direct v&eacute;rifie-t-il une de ces conditions ? 
  
  *  Les <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#soustitres-synchroniss-objet-multimdia">sous-titres synchronis&eacute;s</a> sont pertinents 
  *  Les <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#soustitres-synchroniss-objet-multimdia">sous-titres synchronis&eacute;s</a> de la version alternative sont pertinents 
@@ -74,10 +74,6 @@ If **Set1** is empty, raise a MessageB
 
  * ManualCheckOnPage (fr): Veuillez v&eacute;rifier manuellement dans la page :
  * ManualCheckOnPage (en): Please manual check on the page:
-
-### Accede Web guidelines
-
- * Rgaa32016-4-4-1-Accedeweb-EDIT-8-3
 
 ### Analysis
 
