@@ -73,6 +73,10 @@ If **Set1** is empty, raise a MessageB
  * ManualCheckOnPage (fr): Veuillez v&eacute;rifier manuellement dans la page :
  * ManualCheckOnPage (en): Please manual check on the page:
 
+### Accede Web guidelines
+
+ * Rgaa32016-4-7-1-Accedeweb-EDIT-8-3
+
 ### Analysis
 
 #### Pre-qualified
