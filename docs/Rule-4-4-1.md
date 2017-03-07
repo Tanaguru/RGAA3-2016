@@ -65,8 +65,8 @@ If **Set1** is empty, raise a MessageB
 
 #### Rules remark
 
- * TrackTagWithoutKindAttribute (fr): Balise Track sans attribut kind d&eacute;tect&eacute;e
- * TrackTagWithoutKindAttribute (en): Track tag without kind attribute detected
+ * WeDetectedVideoElementWithSynchronizedCaptionsCheckThatRelevant (fr): Nous d&eacute;tectons un &eacute;l&eacute;ment vid&eacute;o avec sous-titres synchronis&eacute;s, v&eacute;rifier qu'ils sont pertinent
+ * WeDetectedVideoElementWithSynchronizedCaptionsCheckThatRelevant (en): We detected video element with synchronized captions, check that are relevant
 
  * ManualCheckOnPage (fr): Veuillez v&eacute;rifier manuellement dans la page :
  * ManualCheckOnPage (en): Please manual check on the page:
