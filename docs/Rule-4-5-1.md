@@ -21,7 +21,6 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#mdia
  *  Il existe une <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#transcription-textuelle-media-temporel">transcription textuelle</a> accessible via un <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#lien-adjacent">lien adjacent</a> (une `url` ou une `ancre`) 
  *  Il existe une <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#transcription-textuelle-media-temporel">transcription textuelle</a> adjacente clairement identifiable 
 
-
 ### Level
 
 **AA**
