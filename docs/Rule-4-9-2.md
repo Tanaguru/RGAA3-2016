@@ -2,21 +2,19 @@
 
 ## Summary
 
-No-check rule
-
 ## Business description
 
 ### Criterion
 
-[4.9](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-4-9)
+[4.9](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-4-9)
 
 ###Test
 
-[4.9.2](http://references.modernisation.gouv.fr/referentiel-technique-0#test-4-9-2)
+[4.9.2](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-4-9-2)
 
 ### Description
 
-Chaque <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mMediaTemp">m&eacute;dia temporel</a> synchronis&eacute; pr&eacute;-enregistr&eacute; a-t-il, si n&eacute;cessaire, une interpr&eacute;tation en langue des signes adapt&eacute;e &agrave; la langue du m&eacute;dia (<a href="http://references.modernisation.gouv.fr/referentiel-technique-0#cpCrit4-" title="Cas particuliers pour le crit&egrave;re 4.9">hors cas particuliers</a>) ?
+Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#mdia-temporel-type-son-vido-et-synchronis">m&eacute;dia temporel</a> synchronis&eacute; pr&eacute;-enregistr&eacute; a-t-il, si n&eacute;cessaire, une interpr&eacute;tation en langue des signes adapt&eacute;e &agrave; la langue du m&eacute;dia (<a href="http://references.modernisation.gouv.fr/rgaa/cas-particuliers.html#cp-4-1,4-2,4-3,4-5,4-7,4-9,4-11,4-13" title="Cas particuliers pour le crit&egrave;re 4.9">hors cas particuliers</a>) ?
 
 ### Level
 
@@ -36,10 +34,43 @@ Chaque <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#
 
 ### Selection
 
+#### Set1
+
+All the elements `<video>` tags (css selector : `video`);
+
 ### Process
+
+##### Test1
+
+For each element of **Set1**, raise a MessageA
+
+If **Set1** is empty, raise a MessageB
+
+#### Messages
+
+##### MessageA : We detected video element, check that they have a sign language interpretation
+
+-    code : **WeDetectedVideoElementCheckThatTheyHaveSignLanguageInterpretation** 
+-    status: Pre-Qualified (NMI-Neutral)
+-    parameter : tag name, snippet
+-    present in source : yes
+
+##### MessageB: Manual check on page
+
+-   code : ManualCheckOnPage
+-   status: Pre-Qualified (NMI-Neutral)
+-   present in source : yes
+
+#### Rules remark
+
+ * WeDetectedVideoElementCheckThatTheyHaveSignLanguageInterpretation (fr): Nous d&eacute;tectons un &eacute;l&eacute;ment vid&eacute;o, v&eacute;rifier qu'il y a une interpr&eacute;tation en langue des signes
+ * WeDetectedVideoElementCheckThatTheyHaveSignLanguageInterpretation (en): We detected video element, check that they have a sign language interpretation
+
+ * ManualCheckOnPage (fr): Veuillez v&eacute;rifier manuellement dans la page :
+ * ManualCheckOnPage (en): Please manual check on the page:
 
 ### Analysis
 
-#### No Tested 
+#### Pre-qualified
 
 In all cases
