@@ -43,6 +43,10 @@ Chaque <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#
 
 All the elements `<audio>` tags with at least one child `<track>` tag (css selector : `audio`);
 
+#### Set2
+
+All the elements `<embed>` and `<object>` tags (css selector : `embed`, `object`);
+
 ### Process
 
 #### Tests
@@ -51,7 +55,7 @@ All the elements `<audio>` tags with at least one child `<track>` tag (css selec
 
 For each element of **Set1**, raise a MessageA
 
-If **Set1** is empty, raise a MessageB
+If **Set1** is empty and **Set2** is not empty, raise a MessageB
 
 #### Messages
 
@@ -77,6 +81,10 @@ If **Set1** is empty, raise a MessageB
  * ManualCheckOnPage (en): Please manual check on the page:
 
 ### Analysis
+
+#### Not Applicable
+
+if no media element is present in the page (**Set1** and **Set2** is empty)
 
 #### Pre-qualified
 
