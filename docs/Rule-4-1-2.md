@@ -44,13 +44,17 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#mdia
 
 All the elements `<video>` tags (css selector : `video`);
 
+#### Set2
+
+All the elements `<embed>` and `<object>` tags (css selector : `embed`, `object`);
+
 ### Process
 
 #### Tests
 
 ##### Test1
 
-If **Set1** is empty, raise a MessageA
+If **Set1** is empty and **Set2** is not empty, raise a MessageA
 
 If **Set1** is not empty, raise a MessageB
 
@@ -84,6 +88,10 @@ If **Set1** is not empty, raise a MessageB
  * Rgaa32016-4-1-2-Accedeweb-EDIT-8-3
 
 ### Analysis
+
+#### Not Applicable
+
+If no media element is present in the page (**Set1** and **Set2** is empty)
 
 #### Pre-qualified
 
