@@ -40,7 +40,7 @@ All the elements `<video>` tags with at least one child `<track>` tag (css selec
 
 #### Set2
 
-All the elements `<embed>` and `<object>` tags (css selector : `embed`, `object`);
+All the elements `<bgsound>`, `<embed>` and `<object>` tags (css selector : `bgsound`, `embed`, `object`);
 
 ### Process
 

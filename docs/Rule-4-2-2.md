@@ -46,7 +46,7 @@ All the elements `<video>` tags (css selector : `video`);
 
 #### Set2
 
-All the elements `<embed>` and `<object>` tags (css selector : `embed`, `object`);
+All the elements `<bgsound>`, `<embed>` and `<object>` tags (css selector : `embed`, `object`);
 
 ### Process
 
