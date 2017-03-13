@@ -42,13 +42,17 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#mdia
 
 All the elements `<video>` tags (css selector : `video`);
 
+#### Set2
+
+All the elements `<embed>` and `<object>` tags (css selector : `embed`, `object`);
+
 ### Process
 
 ##### Test1
 
 For each element of **Set1**, raise a MessageA
 
-If **Set1** is empty, raise a MessageB
+If **Set1** is empty and **Set2** is not empty, raise a MessageB
 
 #### Messages
 
