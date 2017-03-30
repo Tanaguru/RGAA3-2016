@@ -38,10 +38,6 @@ Dans chaque page Web, les informations regroup&eacute;es sous forme de listes no
 
 ### Selection
 
-#### Set1
-
-All the `<li>` tags in the page
-
 #### Set2
 
 All Series of links (more than 2 links in a same tag) only separate by a space ` `, a ` | `, a ` * `, a ` § `, a ` ¤ `, a ` µ `, a `<br />` tag or a ` - `
@@ -54,12 +50,6 @@ All tags that contains more than 2 following caracters : a ` | `, a ` * `, a ` �
 
 #### Tests
 
-##### Test1
-
-For each element of **Set1**, check that the parent of the element is a `<ul>` tag or a `<ol>` tag.
-
-For each element return false-result of **Test1**, raise the MessageA.
-
 ##### Test2
 
 For each element of **Set2**, raise the MessageB.
@@ -70,13 +60,6 @@ For each element of **Set3**, raise the MessageB.
 
 #### Messages
 
-##### MessageA : list element not in a list
-
--    code : **ListElementNotInList** 
--    status: Failed
--    parameter : snippet
--    present in source : yes
-
 ##### MessageB : We detected elements that appear to be list elements not implement in list
 
 -    code : **WeDetectedElementsThatAppearToBeListElementsNotImplementInList** 
@@ -85,9 +68,6 @@ For each element of **Set3**, raise the MessageB.
 -    present in source : yes
 
 #### Rules remark
-
- * ListElementNotInList (fr): &Eacute;l&eacute;ment de liste non impl&eacute;ment&eacute; dans une liste :
- * ListElementNotInList (en): list element not in a list:
 
  * WeDetectedElementsThatAppearToBeListElementsNotImplementInList (fr): Nous d&eacute;tectons des &eacute;l&eacute;ments qui semble &ecirc;tre des &eacute;l&eacute;ments de liste non impl&eacute;ment&eacute; dans une liste :
  * WeDetectedElementsThatAppearToBeListElementsNotImplementInList (en): We detected elements that appear to be list elements not implement in list:
