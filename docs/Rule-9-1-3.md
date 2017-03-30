@@ -36,7 +36,7 @@ Dans chaque page Web, chaque <a href="http://references.modernisation.gouv.fr/re
 
 #### Set1
 
-All the tags inthe page that not a `<Hx>` tag where x is comprise between 1 and 6 or not a tag with a `"role"` attribute equals to "heading" and an `"aria-level"` attribute (h1, h2, h3, h4, h5, h6, [role=heading][aria-level])
+All the tags in the page that not a `<Hx>` tag where x is comprise between 1 and 6 or not a tag with a `"role"` attribute equals to "heading" and an `"aria-level"` attribute (h1, h2, h3, h4, h5, h6, [role=heading][aria-level])
 
 ### Process
 
