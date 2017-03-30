@@ -8,15 +8,15 @@ This test consists in checking the relevancy of the caption of complex tables.
 
 ### Criterion
 
-[5.2](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-5-2)
+[5.2](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-5-2)
 
 ###Test
 
-[5.2.1](http://references.modernisation.gouv.fr/referentiel-technique-0#test-5-2-1)
+[5.2.1](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-5-2-1)
 
 ### Description
 
-Pour chaque <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mTabDonneeC">tableau de donn&eacute;e complexes</a> (balise `table`) ayant un r&eacute;sum&eacute;, celui-ci est-il pertinent ?
+Pour chaque <a href="http://rgaa.tanaguru.com/en/glossaire.html#tableau-de-donnees-complexe">tableau de donn&eacute;e complexes</a> (balise `table`) ayant un r&eacute;sum&eacute;, celui-ci est-il pertinent ?
 
 ### Level
 
@@ -94,6 +94,24 @@ For each occurence of false-result of **Test2**, raise a MessageC. Raise a Messa
 -   status: Pre-Qualified
 -   parameter : title attribute, snippet
 -   present in source : yes
+
+#### Rules remark
+
+ * NotPertinentCaptionForComplexTable (fr): Le contenu de la balise fille <code>caption</code> des tableaux complexes suivants n&#39;est pas pertinent :
+ * NotPertinentCaptionForComplexTable (en): The <code>caption</code> child tag is not pertinent for the following complex tables :
+
+ * CheckCaptionPertinenceForComplexTable (fr): V&eacute;rifier la pertinence du contenu de la balise fille <code>caption</code> des tableaux complexes suivants :
+ * CheckCaptionPertinenceForComplexTable (en): Please check the pertinence of the <code>caption</code> child tag for the following complex tables :
+
+ * CheckTableIsComplexForNotPertinentCaption (fr): Le contenu de la balise fille <code>caption</code> des tableaux suivants n&#39;est pas pertinent, veuillez v&eacute;rifier qu&#39;il s&#39;agit de tableaux complexes :
+ * CheckTableIsComplexForNotPertinentCaption (en): The <code>caption</code> child tag is not pertinent for the following tables, please check it is actually complex tables :
+
+ * CheckTableIsComplexAndCaptionPertinence (fr): Si les tableaux suivants sont des tableaux complexes, veuillez verifier la pertinence du contenu de leur balise fille <code>caption</code> : 
+ * CheckTableIsComplexAndCaptionPertinence (en): If the following tables are complex tables, please check the pertinence of their <code>caption</code> child tag : 
+
+### Accede Web guidelines
+
+ * Rgaa32016-5-2-1-Accedeweb-HTML-9-1
 
 ### Analysis
 
