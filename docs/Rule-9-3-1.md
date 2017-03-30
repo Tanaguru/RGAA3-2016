@@ -6,11 +6,11 @@
 
 ### Criterion
 
-[9.3](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-9-3)
+[9.3](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-9-3)
 
 ###Test
 
-[9.3.1](http://references.modernisation.gouv.fr/referentiel-technique-0#test-9-3-1)
+[9.3.1](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-9-3-1)
 
 ### Description
 
@@ -58,7 +58,16 @@ For each element of **Set2**, raise the MessageB.
 
 For each element of **Set3**, raise the MessageB.
 
+If **Set2** and **Set3** are empty, raise the MessageA
+
 #### Messages
+
+##### MessageA : Check user is warned in case of new window open
+
+-   code : ManualCheckOnElements
+-   status: Pre-Qualified (NMI-Neutral)
+-   parameter : text content, snippet
+-   present in source : yes
 
 ##### MessageB : We detected elements that appear to be list elements not implement in list
 
@@ -68,6 +77,9 @@ For each element of **Set3**, raise the MessageB.
 -    present in source : yes
 
 #### Rules remark
+
+ * ManualCheckOnElements (fr): Veuillez v&eacute;rifier les &eacute;l&eacute;ments <code>{0}</code> d&eacute;tect&eacute;s :
+ * ManualCheckOnElements (en): Please check the <code>{0}</code> detected elements :
 
  * WeDetectedElementsThatAppearToBeListElementsNotImplementInList (fr): Nous d&eacute;tectons des &eacute;l&eacute;ments qui semble &ecirc;tre des &eacute;l&eacute;ments de liste non impl&eacute;ment&eacute; dans une liste :
  * WeDetectedElementsThatAppearToBeListElementsNotImplementInList (en): We detected elements that appear to be list elements not implement in list:
@@ -80,6 +92,6 @@ For each element of **Set3**, raise the MessageB.
 
 ### Analysis
 
-#### No Tested 
+#### Per-qualified
 
 In all cases
