@@ -19,7 +19,6 @@ Dans chaque page Web, les informations regroup&eacute;es sous forme de listes or
  * La liste utilise les balises HTML `ol` et `li` 
  * La liste utilise les roles ARIA `list` et `listitem` 
 
-
 ### Level
 
 **A**

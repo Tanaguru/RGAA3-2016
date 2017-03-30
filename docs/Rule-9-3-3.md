@@ -8,11 +8,11 @@ No-check rule
 
 ### Criterion
 
-[9.3](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-9-3)
+[9.3](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-9-3)
 
 ###Test
 
-[9.3.3](http://references.modernisation.gouv.fr/referentiel-technique-0#test-9.3.3)
+[9.3.3](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-9.3.3)
 
 ### Description
 
@@ -37,6 +37,10 @@ Dans chaque page Web, les informations regroup&eacute;es sous forme de listes de
 ### Selection
 
 ### Process
+
+### Rules remark
+
+ * Rgaa32016-9-3-3-Accedeweb-HTML-8-3
 
 ### Analysis
 
