@@ -96,7 +96,7 @@ If **Set1**, **Set2**, **Set3** and **Set4** are empty and **Set5** is not empty
 
 #### Rules remark
 
- * AudioElementWithoutTextTranscription (fr): 
+ * AudioElementWithoutTextTranscription (fr): &Eacute;l&eacute;ment audio sans transcription textuelle
  * AudioElementWithoutTextTranscription (en): Audio element without text transcription
 
  * WeDetectedAudioElementCheckManuallyThePresenceOfTextTranscription (fr): Nous d&eacute;tectons des &eacute;l&eacute;ments audio, v&eacute;rifier manuellement la pr&eacute;sence d'une transcription textuelle
