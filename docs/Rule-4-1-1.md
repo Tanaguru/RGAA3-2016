@@ -65,11 +65,17 @@ All the elements `<bgsound>`, `<embed>` not in **Set4** and `<object>` not in **
 
 For each element of **Set1**, **Set2**, **Set3** and **Set4**, check if these brothers tags are not textual tags (see note about not textual tags), for a not semantics tag, see childs
 
-For each element return true-result of **Test1**, raise MessageA, raise MessageB instead
+For each element return true-result of **Test1**, raise MessageA
 
 ##### Test2
 
-If **Set1**, **Set2**, **Set3** and **Set4** are empty and **Set5** is not empty, raise a MessageC
+For each element return false-result of **Test1**, check if one of these brothers tags has a key expression (see note about key expression)
+
+For each element return false-result of **Test2**, raise MessageB, raise MessageC instead
+
+##### Test2
+
+If **Set1**, **Set2**, **Set3** and **Set4** are empty and **Set5** is not empty, raise a MessageD
 
 #### Messages
 
@@ -80,9 +86,9 @@ If **Set1**, **Set2**, **Set3** and **Set4** are empty and **Set5** is not empty
 -    parameter : tag name, snippet
 -    present in source : yes
 
-##### MessageB : No audio element detected, check manually the presence of other audio element and its text transcription
+##### MessageB : We detected audio element with a text transcription nearby check manually that relevant
 
--    code : **NoAudioElementDetectedCheckManuallyThePresenceOfOtherAudioElementAndItsTextTranscription** 
+-    code : **WeDetectedAudioElementWithTextTranscriptionNearbyCheckManually** 
 -    status: Pre-qualified (NMI-Neutral)
 -    parameter : tag name, snippet
 -    present in source : yes
@@ -94,10 +100,20 @@ If **Set1**, **Set2**, **Set3** and **Set4** are empty and **Set5** is not empty
 -    parameter : tag name, snippet
 -    present in source : yes
 
+##### MessageD : No audio element detected, check manually the presence of other audio element and its text transcription
+
+-    code : **NoAudioElementDetectedCheckManuallyThePresenceOfOtherAudioElementAndItsTextTranscription** 
+-    status: Pre-qualified (NMI-Neutral)
+-    parameter : tag name, snippet
+-    present in source : yes
+
 #### Rules remark
 
  * AudioElementWithoutTextTranscription (fr): &Eacute;l&eacute;ment audio sans transcription textuelle
  * AudioElementWithoutTextTranscription (en): Audio element without text transcription
+
+ * WeDetectedAudioElementWithTextTranscriptionNearbyCheckManually (fr): Nous d&eacute;tectons des &eacute;l&eacute;ments audio avec une transcription textuelle à proximit&eacute;, v&eacute;rifier manuellement que cela est correct :
+ * WeDetectedAudioElementWithTextTranscriptionNearbyCheckManually (en): We detected audio element with a text transcription nearby check manually that relevant
 
  * WeDetectedAudioElementCheckManuallyThePresenceOfTextTranscription (fr): Nous d&eacute;tectons des &eacute;l&eacute;ments audio, v&eacute;rifier manuellement la pr&eacute;sence d'une transcription textuelle
  * WeDetectedAudioElementCheckManuallyThePresenceOfTextTranscription (en): We detected audio element, check manually the presence of a text transcription
