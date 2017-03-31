@@ -140,6 +140,10 @@ At least one audio element don't have a transcription near the element (At least
 
 In all other cases
 
+## Diagrammes
+
+![](https://github.com/Tanaguru/Angularjs2/blob/master/assets/licence01.png)
+
 ## Notes
 
 The textual tags : 
@@ -161,3 +165,4 @@ the following list of audio extension :
 This list must be implement with a file editable by the administrator
 
 Complete this list if necessary.
+
