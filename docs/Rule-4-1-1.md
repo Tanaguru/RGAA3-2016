@@ -142,7 +142,7 @@ In all other cases
 
 ## Diagrammes
 
-![](https://github.com/Tanaguru/Angularjs2/blob/master/assets/licence01.png)
+![](https://github.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test4-1-1.png)
 
 ## Notes
 
