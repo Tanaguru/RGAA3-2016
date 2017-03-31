@@ -142,7 +142,7 @@ In all other cases
 
 ## Diagrammes
 
-![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test4-1-1.png)
+![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test4-1-1.png?token=AI6sAwSY_GMm7oh19ptuPuwN6MwPl-ypks5Y56-OwA%3D%3D)
 
 ## Notes
 
