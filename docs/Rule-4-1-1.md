@@ -43,7 +43,19 @@ All the elements `<audio>` tags (css selector : `audio`);
 
 #### Set2
 
-All the elements `<bgsound>`, `<embed>` and `<object>` tags (css selector : `bgsound`, `embed`, `object`);
+All the elements `<video>` tags (css selector : `video`) with `src` attribute that value has an audio extension (see note about audio extension)
+
+#### Set3
+
+All the elements `<object>` tags (css selector : `object`) with `data` attribute that value has an audio extension 
+
+#### Set4
+
+All the elements `<embed>` tags (css selector : `embed`) with `src` attribute that value has an audio extension 
+
+#### Set5
+
+All the elements `<bgsound>`, `<embed>` not in **Set4** and `<object>` not in **Set3** tags (css selector : `bgsound`, `embed`, `object`);
 
 ### Process
 
@@ -51,16 +63,20 @@ All the elements `<bgsound>`, `<embed>` and `<object>` tags (css selector : `bgs
 
 ##### Test1
 
-If **Set1** is empty and **Set2** is not empty, raise a MessageA
+For each element of **Set1**, **Set2**, **Set3** and **Set4**, check if these brothers tags are not textual tags (see note about not textual tags), for a not semantics tag, see childs
 
-If **Set1** is not empty, raise a MessageB
+For each element return true-result of **Test1**, raise MessageA, raise MessageB instead
+
+##### Test2
+
+If **Set1**, **Set2**, **Set3** and **Set4** are empty and **Set5** is not empty, raise a MessageC
 
 #### Messages
 
-##### MessageA : We detected audio element, check manually the presence of a text transcription
+##### MessageA : Audio element without text transcription
 
--    code : **WeDetectedAudioElementCheckManuallyThePresenceOfTextTranscription** 
--    status: Pre-qualified (NMI-Neutral)
+-    code : **AudioElementWithoutTextTranscription** 
+-    status: Failed
 -    parameter : tag name, snippet
 -    present in source : yes
 
@@ -71,7 +87,17 @@ If **Set1** is not empty, raise a MessageB
 -    parameter : tag name, snippet
 -    present in source : yes
 
+##### MessageC : We detected audio element, check manually the presence of a text transcription
+
+-    code : **WeDetectedAudioElementCheckManuallyThePresenceOfTextTranscription** 
+-    status: Pre-qualified (NMI-Neutral)
+-    parameter : tag name, snippet
+-    present in source : yes
+
 #### Rules remark
+
+ * AudioElementWithoutTextTranscription (fr): 
+ * AudioElementWithoutTextTranscription (en): Audio element without text transcription
 
  * WeDetectedAudioElementCheckManuallyThePresenceOfTextTranscription (fr): Nous d&eacute;tectons des &eacute;l&eacute;ments audio, v&eacute;rifier manuellement la pr&eacute;sence d'une transcription textuelle
  * WeDetectedAudioElementCheckManuallyThePresenceOfTextTranscription (en): We detected audio element, check manually the presence of a text transcription
@@ -88,8 +114,34 @@ If **Set1** is not empty, raise a MessageB
 
 #### Not Applicable
 
-If no media element is present in the page (**Set1** and **Set2** is empty)
+If no media element is present in the page (**Set1**, **Set2**, **Set3**, **Set4** and **Set5** are empty)
+
+#### Failed
+
+At least one audio element don't have a transcription near the element (At least one element return true-result of **test1**)
 
 #### Pre-qualified
 
-In all cases
+In all other cases
+
+## Notes
+
+The textual tags : 
+ - `<video>` ;
+ - `<audio>` ;
+ - `<embed>` ;
+ - `<object>` ;
+ - `<img>` ;
+ - `<svg>` ;
+ - `<canvas>` ;
+ - `<source>` ; 
+ - `<input>` ;
+ - `<textarea>` ;
+ - `<select>` ;
+
+the following list of audio extension :
+ - mp3 ;
+
+This list must be implement with a file editable by the administrator
+
+Complete this list if necessary.
