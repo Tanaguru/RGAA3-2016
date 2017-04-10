@@ -85,3 +85,6 @@ All the video with track tag have a kind attribute (All element of **Test1** ret
 #### Failed
 
 At least one video with track tag have no kind attribute (At least one element of **Test1** return false-result)
+
+#References
+https://dev.w3.org/html5/spec-author-view/video.html
