@@ -2,8 +2,6 @@
 
 ## Summary
 
-No-check rule
-
 ## Business description
 
 ### Criterion
@@ -40,19 +38,21 @@ Pour chaque <a href="http://references.modernisation.gouv.fr/referentiel-techniq
 
 All the elements `<video>` tags with at least one child `<track>` tag (css selector : `video`);
 
-#### Set2
-
-All the elements `<bgsound>`, `<embed>` and `<object>` tags (css selector : `bgsound`, `embed`, `object`);
-
 ### Process
 
 #### Tests
 
 ##### Test1
 
-For each element of **Set1**, check the presence of a kind="captions" attribute on the `<track>` tags
+For each element of **Set1**, check if all child `<track>` tags don't have a kind attribute
 
-For each element return false-result of **Test1**, raise a MessageA
+For each element return true-result of **Test1**, raise a MessageA
+
+##### Test2
+
+For each element return false-result of **Test1**, check if at least one child `"<track>"` tag have a kind attribute with `"caption"`
+
+For each element return false-result of **Test2**, raise a MessageB
 
 #### Messages
 
@@ -63,10 +63,20 @@ For each element return false-result of **Test1**, raise a MessageA
 -    parameter : tag name, snippet
 -    present in source : yes
 
+##### MessageA : Track tag without kind caption attribute
+
+-    code : **TrackTagWithoutKindCaptionAttribute** 
+-    status: Failed
+-    parameter : tag name, kind value, snippet
+-    present in source : yes
+
 #### Rules remark
 
  * TrackTagWithoutKindAttribute (fr): Balise Track sans attribut kind d&eacute;tect&eacute;e
  * TrackTagWithoutKindAttribute (en): Track tag without kind attribute detected
+
+ * TrackTagWithoutKindCaptionAttribute (fr): Balise Track sans attribut kind dont la valeur est caption d&eacute;tect&eacute;e
+ * TrackTagWithoutKindCaptionAttribute (en): Track tag without kind attribute that value is caption detected
 
 ### Accede Web guidelines
 
@@ -76,12 +86,14 @@ For each element return false-result of **Test1**, raise a MessageA
 
 #### Not Applicable
 
-if no media element is present in the page (**Set1** and **Set2** is empty)
+if no media element with track tag is present in the page (**Set1** is empty)
 
 #### Passed
 
-All the video with track tag have a kind attribute (All element of **Test1** return true-result)
+All the video with track tag have a kind attribute with caption (All element of **Test2** return true-result)
 
 #### Failed
 
 At least one video with track tag have no kind attribute (At least one element of **Test1** return false-result)
+
+At least one video with track tag without kind attribute that value is caption (At least one element of **Test2** return false-result)
