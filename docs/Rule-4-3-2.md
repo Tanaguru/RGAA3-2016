@@ -76,7 +76,7 @@ For each element return false-result of **Test2**, raise a MessageB
  * TrackTagWithoutKindAttribute (en): Track tag without kind attribute detected
 
  * TrackTagWithoutKindCaptionAttribute (fr): Balise Track sans attribut kind dont la valeur est caption d&eacute;tect&eacute;e
- * TrackTagWithoutKindCaptionAttribute (en): Track tag without kind attribute that value is caption detected
+ * TrackTagWithoutKindCaptionAttribute (en): Track tag without kind attribute which the detected value is caption
 
 ### Accede Web guidelines
 
