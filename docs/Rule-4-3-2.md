@@ -98,5 +98,9 @@ At least one video with track tag have no kind attribute (At least one element o
 
 At least one video with track tag without kind attribute that value is caption (At least one element of **Test2** return false-result)
 
+## Diagrammes
+
+![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test4-1-1.png?token=AI6sAwSY_GMm7oh19ptuPuwN6MwPl-ypks5Y56-OwA%3D%3D)
+
 ## References
 https://dev.w3.org/html5/spec-author-view/video.html
