@@ -63,7 +63,7 @@ For each element return false-result of **Test2**, raise a MessageB
 -    parameter : tag name, snippet
 -    present in source : yes
 
-##### MessageA : Track tag without kind caption attribute
+##### MessageB : Track tag without kind caption attribute
 
 -    code : **TrackTagWithoutKindCaptionAttribute** 
 -    status: Failed
