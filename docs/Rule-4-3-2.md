@@ -103,4 +103,13 @@ At least one video with track tag without kind attribute that value is caption (
 ![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test4-3-2.png?token=AI6sA2ThE_N5fJHe1fg1Gq-fXcmozMhZks5Y9iZvwA%3D%3D)
 
 ## References
+
 https://dev.w3.org/html5/spec-author-view/video.html
+
+## RGAA 3 reference
+
+https://github.com/Tanaguru/Tanaguru-rules-RGAA-3-doc/blob/master/docs/Rule-4-3-2.md
+
+### Update
+
+New test
