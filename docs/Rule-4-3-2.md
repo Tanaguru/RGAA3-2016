@@ -8,7 +8,7 @@
 
 [4.3](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-4-3)
 
-###Test
+### Test
 
 [4.3.2](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-4.3.2)
 
@@ -97,3 +97,6 @@ All the video with track tag have a kind attribute with caption (All element of 
 At least one video with track tag have no kind attribute (At least one element of **Test1** return false-result)
 
 At least one video with track tag without kind attribute that value is caption (At least one element of **Test2** return false-result)
+
+## References
+https://dev.w3.org/html5/spec-author-view/video.html
