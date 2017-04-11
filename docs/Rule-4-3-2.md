@@ -100,7 +100,7 @@ At least one video with track tag without kind attribute that value is caption (
 
 ## Diagrammes
 
-![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test4-3-2.png?token=AI6sA5aRliOCeJk2tpZduMrNK3PjO-AOks5Y9jixwA%3D%3D)
+![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test4-3-2.png?token=AI6sA_kg4dprUhPP5pbf5xTxIN9jrshJks5Y9jw3wA%3D%3D)
 
 ## References
 
