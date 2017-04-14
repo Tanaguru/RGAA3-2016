@@ -90,3 +90,16 @@ All other case
 ## Notes
 
 We only detect the elements of the **Set1** to determine whether the test is applicable
+
+## Diagrammes
+
+![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test1-1-1.png?token=AI6sA6seL_G8Cales6bwE5OeJCu171T4ks5Y-cKmwA%3D%3D)
+
+## RGAA 3 reference
+
+https://github.com/Tanaguru/Tanaguru-rules-RGAA-3-doc/blob/master/docs/Rule-1-1-4.md
+
+### Update
+
+ * Add **Set2** and **Test2**
+ * Update **Test1**
