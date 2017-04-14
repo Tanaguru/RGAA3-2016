@@ -99,3 +99,15 @@ At least one obsolete error is raised (**Test1**, **Test2**, **Test3** or **Test
 #### Passed
 
 The page has no W3C obsolete error (**Test1**, **Test2**, **Test3** and **Test4** return false for all element).
+
+## Diagrammes
+
+![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test8-2-2.png?token=AI6sA3cTbWq8dJFQRp5JTMK8PFVyyaY-ks5Y-gvOwA%3D%3D)
+
+## RGAA 3 reference
+
+https://github.com/Tanaguru/Tanaguru-rules-RGAA-3-doc/blob/master/docs/Rule-8-2-2.md
+
+### Update
+
+Add the test

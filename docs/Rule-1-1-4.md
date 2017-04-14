@@ -30,7 +30,7 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#zone
 
 ### Decision level
 
-**Semi-decidable**
+**Decidable**
 
 ## Algorithm
 

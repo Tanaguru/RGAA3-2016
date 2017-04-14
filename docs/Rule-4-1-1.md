@@ -31,7 +31,7 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#mdia
 
 ### Decision level
 
-**Semi-Decidable**
+**Decidable**
 
 ## Algorithm
 
