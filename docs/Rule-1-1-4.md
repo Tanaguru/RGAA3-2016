@@ -93,7 +93,7 @@ We only detect the elements of the **Set1** to determine whether the test is app
 
 ## Diagrammes
 
-![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test1-1-1.png?token=AI6sA6seL_G8Cales6bwE5OeJCu171T4ks5Y-cKmwA%3D%3D)
+![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test1-1-4.png?token=AI6sA1kFWrjWcf74ozPsFwkDusjGd_q1ks5Y-dj7wA%3D%3D)
 
 ## RGAA 3 reference
 
