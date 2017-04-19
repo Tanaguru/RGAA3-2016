@@ -141,7 +141,7 @@ In all cases
 
 ## Diagrammes
 
-![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test4-1-2.png?token=AI6sA10qmrLBLAtsAqakzuFn2fW31CFQks5ZAGKZwA%3D%3D)
+![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test4-1-2.png?token=AI6sAwxs4h--7_b-FlLferqPi2LgqjcJks5ZAGRFwA%3D%3D)
 
 ## References
 
