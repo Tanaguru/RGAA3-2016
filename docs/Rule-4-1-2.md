@@ -8,7 +8,7 @@
 
 [4.1](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-4-1)
 
-###Test
+### Test
 
 [4.1.2](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-4-1-2)
 
@@ -42,15 +42,15 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#mdia
 
 #### Set1
 
-All the elements `<video>` tags (css selector : `video`) with `src` attribute that value has no audio extension (see note about audio extension);
+All the elements `<video>` tags (css selector : `video`) with `src` attribute that value has video extention and no audio extension (see note about audio extension);
 
 #### Set2
 
-All the elements `<object>` tags (css selector : `object`) with `data` attribute that value has no audio extension 
+All the elements `<object>` tags (css selector : `object`) with `data` attribute that value has video extention and no audio extension 
 
 #### Set3
 
-All the elements `<embed>` tags (css selector : `embed`) with `src` attribute that value has no audio extension 
+All the elements `<embed>` tags (css selector : `embed`) with `src` attribute that value has video extention and no audio extension 
 
 #### Set4
 
