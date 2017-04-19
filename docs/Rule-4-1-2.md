@@ -42,11 +42,19 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#mdia
 
 #### Set1
 
-All the elements `<video>` tags (css selector : `video`);
+All the elements `<video>` tags (css selector : `video`) with `src` attribute that value has no audio extension (see note about audio extension);
 
 #### Set2
 
-All the elements `<bgsound>`, `<embed>` and `<object>` tags (css selector : `bgsound`, `embed`, `object`);
+All the elements `<object>` tags (css selector : `object`) with `data` attribute that value has no audio extension 
+
+#### Set3
+
+All the elements `<embed>` tags (css selector : `embed`) with `src` attribute that value has no audio extension 
+
+#### Set4
+
+All the elements `<embed>` not in **Set3** and not with an audio source, `<object>` not in **Set2** tags and not with an audio source and `<svg>` and `<canvas>` tags (css selector : `embed`, `object`, `svg`, `canvas`);
 
 ### Process
 
@@ -54,9 +62,9 @@ All the elements `<bgsound>`, `<embed>` and `<object>` tags (css selector : `bgs
 
 ##### Test1
 
-If **Set1** is empty and **Set2** is not empty, raise a MessageA
+If **Set1**, **Set2** and **Set3** are empty and **Set4** is not empty, raise a MessageB
 
-If **Set1** is not empty, raise a MessageB
+If **Set1**, **Set2** or **Set3** are not empty, raise a MessageA
 
 #### Messages
 
@@ -96,4 +104,39 @@ If no media element is present in the page (**Set1** and **Set2** is empty)
 #### Pre-qualified
 
 In all cases
+
+## Diagrammes
+
+![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test4-1-1.png?token=AI6sA59vhmOxAEBx432mfOI2xUVWoY38ks5Y-cYxwA%3D%3D)
+
+## References
+
+https://dev.w3.org/html5/spec-author-view/video.html
+
+### Update
+
+New test
+
+## Notes
+
+The textual tags : 
+ - `<video>` ;
+ - `<audio>` ;
+ - `<embed>` ;
+ - `<object>` ;
+ - `<img>` ;
+ - `<svg>` ;
+ - `<canvas>` ;
+ - `<source>` ; 
+ - `<input>` ;
+ - `<textarea>` ;
+ - `<select>` ;
+
+the following list of video extension :
+ - mp3 ;
+
+This list must be implement with a file editable by the administrator
+
+Complete this list if necessary.
+
 
