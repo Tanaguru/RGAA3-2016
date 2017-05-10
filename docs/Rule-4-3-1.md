@@ -8,7 +8,7 @@
 
 [4.3](http://references.modernisation.gouv.fr/rgaa/criteres.html#crit-4-3)
 
-###Test
+### Test
 
 [4.3.1](http://references.modernisation.gouv.fr/rgaa/criteres.html#test-4-3-1)
 
@@ -109,3 +109,17 @@ if no media element is present in the page (**Set1** and **Set2** is empty)
 #### Pre-qualified
 
 In all cases
+
+## Diagrammes
+
+![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test4-1-1.png?token=AI6sA0QzhCJx7RtFaC5FDXv-D3M5SnSUks5ZHCUqwA%3D%3D)
+
+## References
+
+https://dev.w3.org/html5/spec-author-view/video.html
+
+https://github.com/Tanaguru/Tanaguru-rules-RGAA-3-doc/blob/master/docs/Rule-4-3-1.md
+
+### Update
+
+New test
