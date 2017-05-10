@@ -21,7 +21,6 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#mdia
  *  Il existe une <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#audiodescription-synchronise-media-temporel">audio-description</a> synchronis&eacute;e 
  *  Il existe une version alternative avec une audio-description synchronis&eacute;e accessible via un lien adjacent (une `url` ou une `ancre`) 
 
-
 ### Level
 
 **A**
