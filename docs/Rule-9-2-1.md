@@ -10,7 +10,7 @@ This test consists in checking whether the `header`, `nav`, `main` and `footer` 
 
 [9.2](http://references.modernisation.gouv.fr/referentiel-technique-0#crit-9-2)
 
-###Test
+### Test
 
 [9.2.1](http://references.modernisation.gouv.fr/referentiel-technique-0#test-9-2-1)
 
@@ -24,7 +24,6 @@ Dans chaque page Web, la structure du document v&eacute;rifie-t-elle ces conditi
  * La <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mZoneMain">zone de contenu principal</a> est structur&eacute;e via une balise `main` 
  * La structure du document utilise une balise `main` unique 
  * La <a href="http://references.modernisation.gouv.fr/referentiel-technique-0#mZoneFooter">zone de pied de page</a> est structur&eacute;e via une balise `footer` 
-
 
 ### Level
 
@@ -92,7 +91,7 @@ if **Test2** is true and **Set2** and **Set3** are empty raise a MessageC.
 
 if **Test1** is true and **Test2** is false, check if the nearest ancestor sectioning of the first `<header>` tag is not `<body>` tag. 
 
-if **Test3** is true, raise a Message A
+if **Test3** is true, raise a MessageA
 
 ##### Test4
 
@@ -123,7 +122,7 @@ if **Test7** is true and **Set6** and **Set7** are empty raise a MessageI.
 ##### MessageA : Suspect Missed implement Header tag
 
 -    code : **SuspectMissedImplementHeadertag** 
--    status: Pre-Qualified
+-    status: Pre-Qualified (NMI-Failed)
 -    parameter : snippet
 -    present in source : yes
 
@@ -137,7 +136,7 @@ if **Test7** is true and **Set6** and **Set7** are empty raise a MessageI.
 ##### MessageC : Suspected Missing Header tag
 
 -    code : **SuspectedMissingHeadertag** 
--    status: Pre-Qualified
+-    status: Pre-Qualified (NMI-Failed)
 -    parameter : none
 -    present in source : no
 
@@ -151,7 +150,7 @@ if **Test7** is true and **Set6** and **Set7** are empty raise a MessageI.
 ##### MessageE : Suspected Missing Nav tag
 
 -    code : **SuspectedMissingNavtag** 
--    status: Pre-Qualified
+-    status: Pre-Qualified (NMI-Failed)
 -    parameter : none
 -    present in source : no
 
@@ -179,7 +178,7 @@ if **Test7** is true and **Set6** and **Set7** are empty raise a MessageI.
 ##### MessageI : Suspected Missing Footer tag
 
 -    code : **SuspectedMissingFootertag** 
--    status: Pre-Qualified
+-    status: Pre-Qualified (NMI-Failed)
 -    parameter : none
 -    present in source : no
 
@@ -205,6 +204,18 @@ If **Test1** is true and all tests **Test2**, **Test3**, **Test4**, **Test5**, *
 #### Pre-Qualified
 
 In all other case
+
+## Diagrammes
+
+![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test8-10-2.png?token=AI6sAz_lihDvdS6W-NtN_O7rIBgrBXmVks5ZHFlvwA%3D%3D)
+
+## RGAA 3 reference
+
+https://github.com/Tanaguru/Tanaguru-rules-RGAA-3-doc/blob/master/docs/Rule-9-2-1.md
+
+### Update
+
+Add the test
 
 ### Notes
 
