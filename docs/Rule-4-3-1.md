@@ -111,7 +111,7 @@ In all cases
 
 ## Diagrammes
 
-![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test4-3-1.png?token=AI6sA6k4CvUDP6ouoVMK_ai-w7w1-Vtqks5ZHFf8wA%3D%3D)
+![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test4-3-1.png?token=AI6sA93zBSlacPSkvEewk09Uf3itQYn4ks5ZHFg7wA%3D%3D)
 
 ## References
 
