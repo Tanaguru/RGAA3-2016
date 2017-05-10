@@ -71,17 +71,25 @@ All the tags with an attribute `id` that value is `footer`, `footer-content`, `c
 
 All the tags with an attribute `role` that value is `content-info`
 
+#### Set8
+
+All the `<header>` tags
+
+#### Set9
+
+Select the `<!DOCTYPE>` tag
+
 ### Process
 
 #### Test
 
 ##### Test1
 
-The `<!DOCTYPE>` tags is `<!DOCTYPE html>`
+Check that the `<!DOCTYPE>` tag is `<!DOCTYPE html>`
 
 ##### Test2 
 
-Check if the **Test1** is true and the page has no `<header>` tag. 
+Check if the **Test1** is true and the **Set8** is empty. 
 
 if **Test2** is true and **Set2** or **Set3** are not empty raise a MessageB.
 
@@ -207,7 +215,7 @@ In all other case
 
 ## Diagrammes
 
-![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test8-10-2.png?token=AI6sAz_lihDvdS6W-NtN_O7rIBgrBXmVks5ZHFlvwA%3D%3D)
+![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test9-2-1.png?token=AI6sA1fhAwWaPcUT9Ben-LNQ_aC3z6bCks5ZHG15wA%3D%3D)
 
 ## RGAA 3 reference
 
