@@ -19,7 +19,6 @@ Chaque <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#mdia
  * Le <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#transcription-textuelle-media-temporel">m&eacute;dia temporel</a> synchronis&eacute; poss&egrave;de des <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#soustitres-synchroniss-objet-multimdia">sous-titres synchronis&eacute;s</a> 
  * Il existe une version alternative poss&eacute;dant des <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#soustitres-synchroniss-objet-multimdia">sous-titres synchronis&eacute;s</a> accessible via un <a href="http://references.modernisation.gouv.fr/rgaa/glossaire.html#lien-adjacent">lien adjacent</a> (une url ou une ancre) 
 
-
 ### Level
 
 **A**
@@ -112,7 +111,7 @@ In all cases
 
 ## Diagrammes
 
-![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test4-1-1.png?token=AI6sA0QzhCJx7RtFaC5FDXv-D3M5SnSUks5ZHCUqwA%3D%3D)
+![](https://raw.githubusercontent.com/Tanaguru/RGAA3-2016/master/docs/Diagrammes/Test4-3-1.png?token=AI6sA6k4CvUDP6ouoVMK_ai-w7w1-Vtqks5ZHFf8wA%3D%3D)
 
 ## References
 
